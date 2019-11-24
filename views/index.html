@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- link in the waypoint library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <title>SVG Animation with Waypoint and Greensock</title>
+</head>
+<body>
+    <h1 class="main-header">SVG with Greensock and Waypoint.js</h1>
+    <main>
+        <!-- if we were using a framework, these might be 6-col or something-->
+        <section id="beer1">
+          <div class="label_wrapper">
+            <h1 class="hidden">Plain old beer</h1>
+            <object data="images/bottleGraphic.svg" type="image/svg+xml" class="svg-graphic" id="bottle"></object>
+            <span class="see-more" data-target="1">See More Info!</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Beer In Glasses</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem facere deleniti ipsam, aliquid ipsum, cum rem ut eos voluptate omnis consequuntur delectus ratione amet nobis laborum accusantium possimus odit quibusdam?
+            </p>
+            <p>
+              Possimus consequuntur amet illum ipsa laborum accusantium, dolor neque magnam ipsum, adipisci deserunt distinctio necessitatibus asperiores ad nulla? Repellendus nobis, eveniet perspiciatis. Quisquam molestiae beatae laborum quo impedit nobis quod.
+            </p>
+          </div>
+        </section>
+
+        <section id="beer2">
+          <div class="label_wrapper">
+            <h1 class="hidden">Plain old beer</h1>
+            <object data="images/beerBarrels.svg" type="image/svg+xml" class="svg-graphic" id="barrels"></object>
+            <span class="see-more" data-target="2">See More Info!</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Beer In Barrels</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem facere deleniti ipsam, aliquid ipsum, cum rem ut eos voluptate omnis consequuntur delectus ratione amet nobis laborum accusantium possimus odit quibusdam?
+            </p>
+            <p>
+              Possimus consequuntur amet illum ipsa laborum accusantium, dolor neque magnam ipsum, adipisci deserunt distinctio necessitatibus asperiores ad nulla? Repellendus nobis, eveniet perspiciatis. Quisquam molestiae beatae laborum quo impedit nobis quod.
+            </p>
+          </div>
+        </section>
+
+        <section id="beer3">
+          <div class="label_wrapper">
+            <h1 class="hidden">Plain old beer</h1>
+            <object data="images/qualityBeer.svg" type="image/svg+xml" class="svg-graphic" id="glasses"></object>
+            <span class="see-more" data-target="3">See More Info!</span>
+          </div>
+
+          <div class="text-wrapper">
+            <h3>Beer in Fancy Glasses</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem facere deleniti ipsam, aliquid ipsum, cum rem ut eos voluptate omnis consequuntur delectus ratione amet nobis laborum accusantium possimus odit quibusdam?
+            </p>
+          </div>
+        </section>
+
+        <article class="popover">
+          <h4 class="ipa-rating">IPA RATING</h4>
+          <div class="ratings">Average Rating: </div>
+          <p class="beer-description"></p>
+        </article>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

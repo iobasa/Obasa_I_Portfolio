@@ -1,0 +1,76 @@
+* { box-sizing: border-box; }
+
+@font-face {
+  font-family: 'brewery';
+  src: url('American Brewery Rough.ttf') format('truetype');
+}
+body { background-color: white; color: black; font-size: 14px; }
+
+.buffer { min-height: 100vh }
+
+main { padding: 40px; }
+
+section { margin-bottom: 100px; color: white; }
+
+section > div:not(.text-wrapper) {
+  width: 30%; display:
+  inline-block;
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.text-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+  width: 65%;
+}
+
+section h3 {
+  display: inline-block;
+  color: black;
+  font-family: 'brewery', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0
+}
+section p { color: black; width: 70%; font-size: 1.25rem; }
+
+.hidden { display: none; }
+
+.svg-graphic { width: 280px; }
+
+.main-header {
+  margin: 20px 0 0 40px; 
+  font-size: 2rem;
+  font-family: "brewery", sans-serif;
+}
+
+.beer-info { display: inline-block; vertical-align: top; padding: 30px; border: thin solid white; }
+
+p > span { display: block; padding-bottom: 12px; }
+
+
+.popover { 
+  display: none;
+  position: absolute;
+  top: 18%;
+  left: 110%;
+  background-color: orange;
+  width: 350px;
+  z-index: 1;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.show-popover { display: block; }
+
+.see-more { 
+  display: block; 
+  padding: 12px 18px; 
+  border-radius: 8px; 
+  color: white; 
+  background-color: salmon; 
+  margin-top: 8px
+}
