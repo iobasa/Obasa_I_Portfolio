@@ -1,0 +1,699 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: -300px;
+    z-index: +1;
+  }
+  
+  #logo{
+    width: 10%;
+  }
+
+  
+#button {
+    background: url("../images/menu.svg") center no-repeat;
+    float: right;
+    margin-right: 20px;
+    border: 0;
+    margin-top: 20px;
+    width: 35px;
+    height: 35px;
+    transition: all 400ms ease;
+  }
+
+#button.expanded {
+    /* browser prefixes for transform */
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    margin-left: auto;
+  
+    /* default transform */
+    transform: rotate(90deg);
+  }
+
+ 
+#burgerCon {
+    background-color: cornflowerblue;
+      width: 100%;
+  height: 80%;
+  
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+      position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: +1;
+  box-shadow: 10px 5px 5px grey;
+
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.2s;
+
+
+  /* this should be off by default and  */
+  display: none;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.show-mobile-nav {
+  display: block !important;
+}
+
+#burgerCon li {
+  padding: 12px;
+  border-top: thin 1px black;
+  text-align: center;
+  -webkit-animation-duration:1s;
+animation-duration:1s;
+-webkit-animation-fill-mode:both;
+animation-fill-mode:both;
+}
+
+#burgerMenu {
+  margin-top: 70px;
+}
+
+#burgerCon a {
+    -webkit-animation-duration:1s;
+animation-duration:1s;
+-webkit-animation-fill-mode:both;
+animation-fill-mode:both;
+  text-decoration: none;
+  font-family: "Poppins",sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 4rem;
+color: black;
+opacity: 0.5;
+}
+
+.close {
+  float: right;
+  right: 20px;
+  color: black;
+  font-family: "Poppins",sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 2rem;
+  position: absolute;
+  top: 20px;
+}
+
+.close h1 {
+  font-family: din-condensed,sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover{
+  cursor: default;
+}
+
+.closeM:hover{
+  cursor: default;
+}
+
+.closeM {
+  float: right;
+  right: 20px;
+  color: black;
+  font-family: "Poppins",sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 2rem;
+  position: absolute;
+  top: 20px;
+}
+
+.closeM h1 {
+  font-family: din-condensed,sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+.iconNav {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+.iconNav a {
+  width: 45px;
+  height: 30px;
+}
+
+.iconNav img {
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 80%;
+}
+  
+  #nav{
+    width: 5%;
+  }
+  
+  .bgc{
+    background-color: #fff;
+  }
+  
+
+  .heroText {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    z-index: +1;
+  }
+  
+  .heroText h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-style: black;
+    font-size: 12rem;
+    text-align: center;
+      color: white;
+    margin-bottom: 50px;
+  }
+  
+  .heroText h2 {
+    display: none;
+  }
+  
+
+
+.showcase{
+    width: 100%;
+}
+
+.c-img{
+  background-image: url("../images/contact-image.jpg");
+  /* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+height:700px;
+}
+
+
+.img{
+
+    background-image: url("../images/place1.jpg");
+              /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height:700px;
+}
+
+.img1{
+
+    background-image: url("../images/place2.jpg");
+              /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height:700px;
+}
+
+.img2{
+
+    background-image: url("../images/place3.jpg");
+              /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height:700px;
+}
+
+.img3{
+
+    background-image: url("../images/place4.jpg");
+              /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height:700px;
+}
+
+.img4{
+
+    background-image: url("../images/place5.jpg");
+              /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height:700px;
+}
+
+.img5{
+
+    background-image: url("../images/place6.jpg");
+              /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height:700px;
+}
+
+.p-text{
+    width: 50%;
+    margin-top: 250px;
+    float: left;
+    margin-left: 50px;
+
+}
+
+.p-text h3{
+    font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: black;
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.p-text p{
+    font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: black;
+  line-height: 40px;
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.text{
+    width: 30%;
+    margin-top: 100px;
+    float: left;
+    margin-left: 50px;
+
+}
+
+.text h3{
+    font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: black;
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.text p{
+    font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: black;
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+ 
+.email {
+  background-color: cornflowerblue;
+    width: 100%;
+height: 80%;
+
+padding-top: 5%;
+padding-bottom: 5%;
+
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: +1;
+box-shadow: 10px 5px 5px grey;
+
+opacity: 1;
+animation-name: fadeInOpacity;
+animation-iteration-count: 1;
+animation-timing-function: ease-in;
+animation-duration: 0.2s;
+
+
+/* this should be off by default and  */
+display: none;
+}
+
+@keyframes fadeInOpacity {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+.email h3{
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:both;
+  animation-fill-mode:both;
+    text-decoration: none;
+    font-family: "Poppins",sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  color: white;
+  opacity: 0.5;
+}
+
+.email p{
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:both;
+  animation-fill-mode:both;
+    text-decoration: none;
+    font-family: "Poppins",sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  color: white;
+  opacity: 0.5;
+}
+
+
+
+
+.show-message { display: block; }
+
+.read-more { 
+  display: block; 
+  padding: 12px 18px; 
+  border-radius: 8px; 
+  color: white; 
+  background-color: salmon; 
+  margin-top: 8px
+}
+
+
+input
+{
+    width: 170%
+}
+
+input[type=text]
+{
+height: 10%;
+padding: 20px 10px;
+margin: 8px 0;
+box-sizing: border-box;
+border: none;
+}
+
+input[type=email]
+{
+padding: 20px 30px;
+margin: 8px 0;
+box-sizing: border-box;
+border: none;
+}
+
+input[type=message]
+{
+    width: 400%;
+    color: black;
+    padding: 40px 30px;
+    margin: 8px 0;
+box-sizing: border-box;
+border: none;
+}
+
+.hero-head1 {
+margin-bottom: 130px;
+margin-top: 130px;
+display: flex;
+flex-direction: column;
+}
+
+.hero-head1 h1{
+width: 40%;
+float: left;
+font-family: din-condensed,sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 10rem;
+color: white;
+background-color: #35AAA6;
+}
+
+.contact label {
+    font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-size: 2rem;
+font-style: normal;
+color: #35AAA6;
+}
+
+#Contact h3 {
+    font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: black;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 160px;
+}
+
+.contact
+{
+    padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.contact p
+{
+    padding-top: 40px;
+}
+
+
+.firstName
+{
+  margin-right: 80px;
+}
+
+.lastName
+{
+  margin-right: 80px;
+}
+
+.E-mail
+{
+  margin-right: 80px;
+}
+
+.message
+{
+  margin-right: 95px;
+}
+
+.message label {
+    font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-style: normal;
+color: #35AAA6;
+  margin-bottom: 10px;
+}
+
+.message textarea {
+  margin-top: 10px;
+  width: 175%;
+    height: 150px;
+    border: none;
+}
+
+.send
+{
+  display: flex;
+  justify-content: center;
+  margin-right: -150px;
+    margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.send
+{
+  float: right;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 2rem;
+    color: white;
+    border-radius: 25px;
+    background-color: #35AAA6;
+    padding-right: 1rem;
+    padding: .2rem 4.5rem;
+    width: 40%;
+}
+
+.send:hover
+{
+    color: #D0E4DD;
+    background-color: black;
+}
+
+
+.end{
+    height: 280px;
+  
+  
+  }
+  
+  .footer{
+    background-color: black;
+  
+    width: 100%;
+  
+    padding-top: 5%;
+    padding-bottom: 5%;
+  
+        position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+  
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+  
+  }
+  
+  #f-logo{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  #f-logo img{
+    width: 10%;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+  }
+  
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  .social-media img{
+    margin: 10px;
+    width: 3%;
+  }
+  
+  #copyright{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  #copyright p {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  
+  
