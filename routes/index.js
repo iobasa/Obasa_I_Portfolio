@@ -1,27 +1,45 @@
 var express = require('express');
 var router = express.Router();
-var path = require('path');
+var auth = require('../config/mailcreds');
+var mailer = require('nodemailer');
 
-const sql = require('../utils/sql');
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  // res.render('index', { title: 'Express' });
-  console.log('send back a static file');
-  res.sendFile((path.join(__dirname, "../views/index.html")));
+// set up the nodemailer stuff
+const transporter = mailer.createTransport({
+	service: 'gmail',
+	auth: {
+		user: auth.user,
+		pass: auth.pass
+	}
 });
 
-router.get('/svgdata/:target', (req, res) => {
-  // here is where we set up the query
-  let query = `SELECT * FROM stats WHERE id="${req.params.target}"`;
+/* GET home page. */
+router.get('/', function (req, res, next) {
+	res.render('index', { title: 'Express' });
+});
 
-  sql.query(query, (err, result) => {
-    if (err) {console.log(err);} // somethin done broke!
+router.post('/mail', (req, res) => {
+	console.log('hit mail route');
+	console.log('body: ', req.body);
 
-    console.log(result); // this should be the database row
+	// get the mail options from the form -> the url params using bodyParser middleware
 
-    res.json(result[0]); // send that row back to the calling function
-  })
+	const mailOptions = {
+		from: req.body.usermail,
+		to: "ifeobasa12@gmail.com",
+		replyTo: req.body.usermail,
+		subject: `From portfolio site: Subject = ${req.body.subject || 'none'}`, // Subject line
+		text: req.body.message
+	};
+
+	transporter.sendMail(mailOptions, function (err, info) {
+		if (err) {
+			console.log("failed... ", err);
+			res.json(err);
+		} else {
+			console.log("success! ", info);
+			res.json(info);
+		}
+	});
 })
 
 module.exports = router;

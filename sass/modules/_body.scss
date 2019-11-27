@@ -1,0 +1,158 @@
+
+  .heroText {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    z-index: +1;
+  }
+  
+  .heroText h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-style: black;
+    font-size: 12rem;
+    text-align: center;
+      color: white;
+    margin-bottom: 50px;
+  }
+  
+  .heroText h2 {
+    display: none;
+  }
+  
+
+
+.showcase{
+    width: 100%;
+}
+
+
+
+.img{
+
+    background-image: url("../images/place1.jpg");
+              /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height:700px;
+}
+
+.img1{
+
+    background-image: url("../images/place2.jpg");
+              /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height:700px;
+}
+
+.img2{
+
+    background-image: url("../images/place3.jpg");
+              /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height:700px;
+}
+
+.img3{
+
+    background-image: url("../images/place4.jpg");
+              /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height:700px;
+}
+
+.img4{
+
+    background-image: url("../images/place5.jpg");
+              /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height:700px;
+}
+
+.img5{
+
+    background-image: url("../images/place6.jpg");
+              /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height:700px;
+}
+
+.p-text{
+    width: 50%;
+    margin-top: 250px;
+    float: left;
+    margin-left: 50px;
+
+}
+
+.p-text h3{
+    font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: black;
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.p-text p{
+    font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: black;
+  line-height: 40px;
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.text{
+    width: 30%;
+    margin-top: 100px;
+    float: left;
+    margin-left: 50px;
+
+}
+
+.text h3{
+    font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: black;
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.text p{
+    font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: black;
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
