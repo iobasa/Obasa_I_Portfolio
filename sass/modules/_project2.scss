@@ -1,0 +1,49 @@
+.body3{
+    background-color: #fff;
+}
+
+.pro-desc1{
+    margin-top: 180px;
+    margin-bottom: 50px;
+}
+
+.pro-desc1 h2{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+
+    .pro-desc1 p{
+        line-height: 25px;
+    }
+    
+    .pro-desc1 h3{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+.info{
+    display: flex;
+    flex-direction: row;
+
+}
+
+#description{
+    padding-bottom: 50px;
+    height: 70%;
+    overflow-y: auto;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* required */
+    margin-left: 2%;
+    width: 45%;
+    overflow: auto;
+}
+
+
+.info img{
+    width: 50%;
+}
+

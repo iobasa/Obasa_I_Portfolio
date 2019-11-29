@@ -1,7 +1,12 @@
 (() => {
     console.log('fired');
 
-    const form = document.querySelector('form'), submit = form.querySelector('.send');
+    const arrow = document.querySelectorAll('.arrow'),
+      bannerImages = document.querySelector(".postshow"),
+    portName = document.querySelector("#portf-name"),
+    portInfo = document.querySelector(".port-info"),
+    form = document.querySelector('form'), 
+    submit = form.querySelector('.send');
 
     	// set up your variable stack ->
 	let mobileNav = document.querySelector("#button"),
@@ -11,6 +16,17 @@
     navLinks = navPanel.querySelectorAll('a'),
     message = document.querySelector('.email'),
     email = document.querySelector('.send');
+
+    const portData = [ // houseData[0][0] -> this is the house name ("stark")
+        // houseData[0][1] -> this is the house data
+      ["Coding", `Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nam, voluptates reiciendis officiis debitis explicabo perferendis quaerat amet iure, quam adipisci eius cupiditate nesciunt perspiciatis suscipit officia molestiae! Possimus, consectetur.`],
+
+      // houseData[1][0] is "baratheon", houseData[1][1] is the house data
+      ["Animation", `Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nam, voluptates reiciendis officiis debitis explicabo perferendis quaerat amet iure, quam adipisci eius cupiditate nesciunt perspiciatis suscipit officia molestiae! Possimus, consectetur.`],
+
+      // houseData[2][0] is "lannister", houseData[2][1] is the house data
+      ["Design", `Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nam, voluptates reiciendis officiis debitis explicabo perferendis quaerat amet iure, quam adipisci eius cupiditate nesciunt perspiciatis suscipit officia molestiae! Possimus, consectetur.`]
+ ];
 
 
 function toggleNav(e) {
@@ -99,6 +115,37 @@ function close(event) {
 
         console.log('tried sending mail');
     }
+
+    function animateBanners() {
+      // we need an offset that we can multiply by to animate
+      // our banners to the left and make the active one show up
+  
+      let offset = 100,
+          multiplier = this.dataset.offset;
+          // this is the data-offset custom data attribute
+          // on each of the sigils
+      console.log((offset * multiplier) + "%");
+  
+      // move the banners to the left using the product of our math
+      bannerImages.style.right = `${offset * multiplier + "%"}`;
+
+      // grab a reference to the current vid in the className object
+      //debugger;
+      //get the className property, split it into its seperate words[an array],
+      //then get the last word --> [1] --> that will always be the house name
+  
+      // the multiplier is the outer array index (and also the data-offset custom attribute on
+      // the html element -> the shield you're clicking on);
+      // the second [] is the INNER array reference (see waaaaay up at the top) -> 0 is the house name, 1 is the house data
+      portName.textContent = `${portData[multiplier][0]}`;
+      portInfo.textContent = portData[multiplier][1];
+    }
+
+
+  
+  //sigils.forEach(sigil => sigil.addEventListener("click", popLightBox));
+  arrow.forEach(arrow => arrow.addEventListener("click", animateBanners));
+
 
     form.addEventListener('submit', handleMail)
       // these are the triggers that fire off our functionality (when user clicks on something)

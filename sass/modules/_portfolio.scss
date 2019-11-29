@@ -1,0 +1,167 @@
+
+body{
+	font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-style: normal;
+background-color: #fff;
+}
+
+
+
+#portf-name h3{
+  font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+font-size: 5rem;
+color: white;
+margin-bottom: 50px;
+}
+
+.port-info p{
+  font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+font-size: 1.2rem;
+color: white;
+margin-bottom: 30px;
+}
+
+
+.p-img{
+
+    background-image: url("../images/place1.jpg");
+              /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 1349px;
+
+  height:700px;
+}
+
+.p-img1{
+
+    background-image: url("../images/place2.jpg");
+              /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 1349px;
+  height:700px;
+}
+
+.p-img2{
+
+    background-image: url("../images/place3.jpg");
+              /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 1349px;
+  height:700px;
+}
+
+.p-img3{
+
+    background-image: url("../images/place4.jpg");
+              /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 1349px;
+  height:700px;
+}
+
+
+.p-img4{
+
+    background-image: url("../images/place5.jpg");
+              /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 1349px;
+  height:700px;
+}
+
+
+
+.postshow{
+    display: flex;
+    flex-direction: row;
+  position:relative; 
+  width:7400px; 
+  transition: all .5s;
+}
+
+.postshow img{
+  width: 1349px;
+  height: 100%;
+   transition: all .5s;
+}
+
+.imgContainer{
+  width:100%;
+height: 700px;
+background-color:grey;
+margin:0 auto;
+overflow:hidden;
+}
+
+.intro{
+  width: 40%;
+  background-color: #fff;
+}
+
+#bottomNav { 
+  display: flex;
+  justify-content: flex-end;
+  margin-top:30px;
+  background-color: #fff;
+  width: 350%;
+  height: 200px;
+  padding: 20px;
+ }
+
+#navList li {
+display:inline;
+list-style-type:none;
+padding:0px 10px;
+cursor:pointer;
+}
+
+#navList li:hover {
+  font-weight: 700;
+  font-size: 1.5rem;
+  }
+
+
+
+.navvv{
+  margin-top: -500px;
+  position: relative;
+  z-index: +3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottom-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  z-index: +3;
+}
+
+.p-end{
+    height: 480px;
+  
+  
+  }
+  
