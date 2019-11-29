@@ -1,0 +1,94 @@
+
+body{
+	font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-style: normal;
+color: black;
+}
+
+.body1{
+    background-color: #fff;
+    color: black;
+}
+
+
+
+#ana-logo{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.name{
+    font-weight: 700;
+    margin-top: 80px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.desc{
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f8faf2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.role{
+    margin-top: 50px;
+}
+
+.role p{
+    margin-bottom: 20px;
+}
+
+.pro-desc{
+    width: 70%;
+}
+
+.pro-desc p{
+    line-height: 25px;
+}
+
+.pro-desc h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.pink{
+    background-color: #c3eb34;
+    height: 70%;
+    margin-top: -500px;
+}
+
+#mockup{
+    margin-left: 5%;
+    width: 90%;
+    position: relative;
+    z-index: +1;
+}
+
+.plan{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #c3eb34;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.plan h3{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.plan img{
+    box-shadow:  10px 10px 5px 5px grey;
+    width: 40%;
+}
+

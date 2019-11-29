@@ -1,3 +1,18 @@
+.body {
+  background-color: black;
+  color: white; }
+
+.error-section a, .error-home {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem;
+  text-align: center; }
+
+.data {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 8rem; }
+
 #button {
   background: url("../images/menu.svg") center no-repeat;
   float: right;
@@ -717,6 +732,326 @@ label {
   flex-direction: row;
   align-content: center;
   justify-content: center; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #fff; }
+
+#portf-name h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: black;
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 50px; }
+
+.port-info p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: black;
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 30px; }
+
+.p-img {
+  background-image: url("../images/place1.jpg");
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1349px;
+  height: 700px; }
+
+.p-img1 {
+  background-image: url("../images/place2.jpg");
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1349px;
+  height: 700px; }
+
+.p-img2 {
+  background-image: url("../images/place3.jpg");
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1349px;
+  height: 700px; }
+
+.p-img3 {
+  background-image: url("../images/place4.jpg");
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1349px;
+  height: 700px; }
+
+.p-img4 {
+  background-image: url("../images/place5.jpg");
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1349px;
+  height: 700px; }
+
+.postshow {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 7400px;
+  transition: all .5s; }
+
+.postshow img {
+  width: 1349px;
+  height: 100%;
+  transition: all .5s; }
+
+.imgContainer {
+  width: 100%;
+  height: 700px;
+  background-color: grey;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.intro {
+  width: 40%;
+  background-color: #fff; }
+
+#bottomNav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  background-color: #fff;
+  width: 350%;
+  height: 200px;
+  padding: 20px; }
+
+#navList li {
+  display: inline;
+  list-style-type: none;
+  padding: 0px 10px;
+  cursor: pointer; }
+
+#navList li:hover {
+  font-weight: 700;
+  font-size: 1.5rem; }
+
+.navvv {
+  margin-top: -500px;
+  position: relative;
+  z-index: +3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.bottom-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  z-index: +3; }
+
+.p-end {
+  height: 480px; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black; }
+
+.body1 {
+  background-color: #fff;
+  color: black; }
+
+#ana-logo {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-left: 10%; }
+
+.name {
+  font-weight: 700;
+  margin-top: 80px;
+  font-size: 3rem;
+  text-align: center; }
+
+.desc {
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f8faf2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.role {
+  margin-top: 50px; }
+
+.role p {
+  margin-bottom: 20px; }
+
+.pro-desc {
+  width: 70%; }
+
+.pro-desc p {
+  line-height: 25px; }
+
+.pro-desc h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px; }
+
+.pink {
+  background-color: #c3eb34;
+  height: 70%;
+  margin-top: -500px; }
+
+#mockup {
+  margin-left: 5%;
+  width: 90%;
+  position: relative;
+  z-index: +1; }
+
+.plan {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #c3eb34;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.plan h3 {
+  font-weight: 700;
+  font-size: 1.2rem; }
+
+.plan img {
+  box-shadow: 10px 10px 5px 5px grey;
+  width: 40%; }
+
+.body3 {
+  background-color: #fff; }
+
+.pro-desc1 {
+  margin-top: 180px;
+  margin-bottom: 50px; }
+
+.pro-desc1 h2 {
+  font-size: 3rem;
+  margin-bottom: 30px; }
+
+.pro-desc1 p {
+  line-height: 25px; }
+
+.pro-desc1 h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px; }
+
+.info {
+  display: flex;
+  flex-direction: row; }
+
+#description {
+  padding-bottom: 50px;
+  height: 70%;
+  overflow-y: auto;
+  overflow: hidden;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  /* required */
+  margin-left: 2%;
+  width: 45%;
+  overflow: auto; }
+
+.info img {
+  width: 50%; }
+
+.fav-logo {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-left: 10%; }
+
+.name {
+  font-weight: 700;
+  margin-top: 80px;
+  font-size: 3rem;
+  text-align: center; }
+
+.desc1 {
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f8faf2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.desc1 {
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f8faf2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.role2 {
+  margin-top: 50px; }
+
+.role2 p {
+  margin-bottom: 20px; }
+
+.pro-desc2 {
+  width: 70%; }
+
+.pro-desc2 p {
+  line-height: 25px; }
+
+.pro-desc2 h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px; }
+
+.pink1 {
+  background-color: #ffe2e0;
+  height: 70%;
+  margin-top: -500px; }
+
+#mockup {
+  margin-left: 5%;
+  width: 90%;
+  position: relative;
+  z-index: +1; }
+
+.plan1 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #ffe2e0;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center; }
+
+.plan1 h3 {
+  font-weight: 700;
+  font-size: 1.2rem; }
+
+.plan1 img {
+  margin-left: 10%;
+  margin-bottom: 100px;
+  box-shadow: 10px 10px 5px 5px grey;
+  width: 80%; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
