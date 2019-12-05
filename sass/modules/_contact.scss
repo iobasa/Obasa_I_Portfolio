@@ -1,3 +1,244 @@
+
+.c-img{
+  background-image: url("../images/contact-image.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+height:145em;
+}
+
+.ctext{
+  width: 100%;
+  text-align: center;
+  padding-top: 350px;
+
+}
+
+.ctext h3{
+  font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+font-size: 5rem;
+color: white;
+margin-bottom: 50px;
+}
+
+.ctext p{
+  font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+font-size: 1.2rem;
+color: white;
+margin-bottom: 30px;
+}
+
+.c-social-media {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.c-social-media img{
+  margin: 10px;
+  width: 6%;
+}
+
+form{
+    margin-top: -200px !important;
+    height: 80%;
+}
+
+input
+{
+  width: 197%;
+}
+
+input[type=text]
+{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  font-size: 2rem;
+height: 10%;
+padding: 20px 10px;
+margin: 8px 0;
+box-sizing: border-box;
+border: none;
+border: 1px solid #000;
+  border-radius: 0;
+}
+
+input[type=email]
+{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: black;
+padding: 20px 10px;
+margin: 8px 0;
+box-sizing: border-box;
+border: none;
+border: 1px solid #000;
+  border-radius: 0;
+}
+
+input[type=message]
+{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  width: 400%;
+  color: black;
+  padding: 40px 30px;
+  margin: 8px 0;
+box-sizing: border-box;
+border: none;
+border: 1px solid #000;
+  border-radius: 0;
+}
+
+.hero-head1 {
+margin-bottom: 130px;
+margin-top: 130px;
+display: flex;
+flex-direction: column;
+}
+
+.hero-head1 h1{
+width: 40%;
+float: left;
+font-family: din-condensed,sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 10rem;
+color: white;
+background-color: #35AAA6;
+}
+
+
+.contact-main label {
+  font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-size: 1.3rem;
+font-style: normal;
+color: black;
+
+}
+
+#Contact-main h3 {
+  font-family: 'Poppins', sans-serif;
+font-weight: 700;
+font-style: black;
+font-size: 4rem;
+text-align: center;
+margin-top: 160px;
+}
+
+.contact-main
+{
+
+  padding-top: 100px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+  align-items: center;
+  height: 55%;
+  width: 45%;
+  margin-left: 15%;
+  
+}
+
+.contact-main p
+{
+  padding-top: 40px;
+}
+
+
+.c-name
+{
+margin-right: 80px;
+}
+
+label{
+  border: black 1px;
+}
+
+.c-subject
+{
+margin-right: 80px;
+}
+
+.c-email
+{
+margin-right: 80px;
+}
+
+.Message
+{
+margin-right: 95px;
+}
+
+.Message label {
+  font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-style: normal;
+color: black;
+margin-bottom: 10px;
+}
+
+.Message textarea {
+  font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 2rem;
+color: black;
+padding: 10px 10px;
+margin-top: 10px;
+width: 200%;
+  height: 200px;
+  border: 1px solid #000;
+  border-radius: 0;
+}
+
+.send1
+{
+display: flex;
+justify-content: center;
+margin-right: -260px;
+  margin-top: 20px;
+margin-bottom: 50px;
+}
+
+.send1
+{
+float: right;
+font-family: 'Poppins', sans-serif;
+font-weight: 400;
+text-decoration: none;
+font-size: 2rem;
+  color: white;
+  background-color: black;
+  padding-right: 1rem;
+  padding: .8rem 6rem;
+  width: 50%;
+}
+
+.send1:hover
+{
+  color: black;
+  background-color: #D0E4DD;
+}
+
+
+@media screen and (min-width: 64em) {
+
 .c-img{
     background-image: url("../images/contact-image.jpg");
     /* Create the parallax scrolling effect */
@@ -144,7 +385,6 @@ color: black;
 .contact-main
 {
 
-    padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,7 +401,7 @@ color: black;
 }
 
 
-.name
+.c-name
 {
   margin-right: 80px;
 }
@@ -170,12 +410,12 @@ label{
     border: black 1px;
 }
 
-.subject
+.c-subject
 {
   margin-right: 80px;
 }
 
-.e-mail
+.c-email
 {
   margin-right: 80px;
 }
@@ -234,4 +474,6 @@ padding: 10px 10px;
 {
     color: black;
     background-color: #D0E4DD;
+}
+
 }
