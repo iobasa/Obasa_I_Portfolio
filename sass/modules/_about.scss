@@ -1,0 +1,27 @@
+.about{
+    background-image: url("../images/ife.png");
+
+        /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  height:700px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.me-text{
+    margin-top: 100px;
+    width: 45%;
+    margin-left: 5%;
+    line-height: 27px;
+}
+
+.me-text h2{
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+}

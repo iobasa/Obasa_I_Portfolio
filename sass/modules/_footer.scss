@@ -1,4 +1,72 @@
+.end{
+  height:13.125em;
 
+
+}
+
+.footer{
+  background-color: black;
+
+  width: 100%;
+
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+      position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+  /* Create the parallax scrolling effect */
+  /* background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+}
+
+#f-logo{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+#f-logo img{
+  width: 10%;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.social-media img{
+  margin: 10px;
+  width: 3%;
+}
+
+#copyright{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  color: white;
+}
+
+#copyright p {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 64em) {
 
 .end{
     height: 280px;
@@ -68,3 +136,4 @@
     justify-content: center;
   }
   
+}

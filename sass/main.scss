@@ -1,16 +1,18 @@
 // do your imports first, so that they're available everywhere
 @import "_vars";
 @import "modules/_errors";
+@import "modules/_header";
 @import "modules/_navbar";
 @import "modules/_b-contact";
 @import "modules/_contact";
 @import "modules/_body";
-@import "modules/_footer";
 @import "modules/_about";
 @import "modules/_portfolio";
 @import "modules/_project1";
 @import "modules/_project2";
 @import "modules/_project3";
+@import "modules/_project6";
+
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -70,3 +72,5 @@ body{
 font-weight: 400;
 font-style: normal;
 }
+
+@import "modules/_footer";

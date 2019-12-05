@@ -1,0 +1,89 @@
+.hero-p6{
+    background-image: url("../images/commercial.jpg");
+            /* Create the parallax scrolling effect */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+height: 700px;
+}
+
+.hero-p6 h2{
+    padding-left: 5%;
+    padding-top: 17%;
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 3rem;
+    text-align: left;
+}
+
+.hero-p6 p{
+    padding-top: 10%;
+    font-family: "Raleway";
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 6.5rem;
+    text-align: center;
+}
+
+.hero-p6 span{
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 64em) {
+.hero-p6{
+    background-image: url("../images/commercial.jpg");
+            /* Create the parallax scrolling effect */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+height: 700px;
+}
+
+.hero-p6 h2{
+    padding-left: 5%;
+    padding-top: 10%;
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 3rem;
+    text-align: left;
+}
+
+.hero-p6 p{
+    padding-top: 10%;
+    font-family: "Raleway";
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 6.5rem;
+    text-align: center;
+}
+
+.hero-p6 span{
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+}
