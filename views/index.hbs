@@ -1,5 +1,6 @@
+   
     <div class="showcase">
-
+     {{!-- <a class="top" href="#more"><img src="images/top.svg" alt="back-to-top"></a> --}}
             <div class="img">
                 <div class="heading">
                     <div id="logo">
@@ -27,61 +28,123 @@
                          <!-- end dropdown nav -->
                        </nav>
                     </div>
-                
-                    <div class="overlay"> </div>
-                        <div class="heroText">
-                                <h1>Ife Obasa</h1>
-                                <h2>animator, developer</h2>
-                        </div>
+
+                     <section data-aos="fade-down" class="about" id="about">
+                       <section class="p-text" >
+                    <b>My name is <span>Ife Obasa</span>, I'm an aspiring web developer.
+                    </b>
+                    <p>I'm an Interactive Media Student at Fanshawe College.</p>
+                        <h3>I like food.</h3>
+                        <a href="#more">Learn More.</a>
+                        </section>
+
+                        <img data-aos="fade-left" src="images/hero-image.jpg" alt="">
+
+                </section>
+
+                    
+              
             </div>
 
             <div class="img1">
-                <section class="p-text">
-                    <h3>About Me..</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor consequuntur explicabo ipsum dolores sed adipisci, quis nostrum voluptatem iure libero. Consequuntur sequi magni consequatur non aliquam expedita debitis hic temporibus.</p>
-                    <a class="read-more" href="/about"> read More..</a>
+              
+              <div data-aos="fade-down"  id="more" class="container">
+  <nav id="nav">
+    <ul>
+      <li>
+        <a  href="#skills">
+        Skillset</a>
+         <section class="p-text">
+                    <span>My Skillset</span>
+                        <b>Languages</b>
+                        <p>CSS3, HTML, JAVASCRIPT, NODE, EXPRESS</p>
+                        <b>Skills</b>
+                        <p>Web development, Web design, 3D design</p>
                 </section>
+      </li>
+      <li>
+        <a  href="#contact">DEMO REEL</a>
+        <img src="images/place5.jpg" alt="">
+      </li>
+       <li>
+        <a  href="#work">My works</a>
+        <img src="images/wood.jpg" alt="">
+      </li>
+      <li>
+        <a  href="#contact">Contact</a>
+        <img src="images/place5.jpg" alt="">
+      </li>
+    </ul>
+  </nav>
+
+</div>
                 
             </div>
 
-
-            {{!-- <div class="img2">
-                <section class="p-text">
-                    <h3>Contact</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor consequuntur explicabo ipsum dolores sed adipisci, quis nostrum voluptatem iure libero. Consequuntur sequi magni consequatur non aliquam expedita debitis hic temporibus.</p>
-                    <a class="read-more" href="/contact"> read More..</a>
+            <div id="skills" class="img2">
+                 <section  data-aos="fade-down" class="p-text">
+                    <b>My Skillset</b>
+                        <p>Languages</p>
+                        <p>CSS3, HTML, JAVASCRIPT, NODE, EXPRESS</p>
+                        <p>Skills</p>
+                        <p>Web development, Web design, 3D design</p>
                 </section>
 
-            </div> --}}
+            </div>
 
-            <div class="img3">
-                <section class="p-text">
-                    <h3>Portfolio</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor consequuntur explicabo ipsum dolores sed adipisci, quis nostrum voluptatem iure libero. Consequuntur sequi magni consequatur non aliquam expedita debitis hic temporibus.</p>
-                    <a class="read-more" href="/portfolio"> read More..</a>
-                </section>
+            <div id="work"  class="img3">
+                    
+<div data-aos="fade-down"  class="container">
+  <nav id="nav">
+    <ul>
+      <li>
+        <a href="/project1">
+        Aesthetic<br>Anastasia</a>
+        <img src="images/rose_glasses.jpg" alt="">
+      </li>
+      <li>
+        <a href="/project2">
+        Infographic</a>
+        <img src="images/place3.jpg" alt="">
+      </li>
+       <li>
+        <a href="/project3">
+
+        Interactive<br>Infographic</a>
+        <img src="images/wood.jpg" alt="">
+      </li>
+      <li>
+        <a href="/project4">
+        Demo reel</a>
+        <img src="images/place5.jpg" alt="">
+      </li>
+      <li>
+        <a href="/project5">
+        Re-branding<br>Project</a>
+        <img src="images/wendy.jpg" alt="">
+      </li>
+       <li>
+        <a href="/project6">
+        Commercial</a>
+        <img src="images/commercial.jpg" alt="">
+      </li>
+    </ul>
+  </nav>
+
+</div>
+
           
             </div>
-{{!-- 
-            <div class="img4">
-                <section class="p-text">
-                    <h3>Coding</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor consequuntur explicabo ipsum dolores sed adipisci, quis nostrum voluptatem iure libero. Consequuntur sequi magni consequatur non aliquam expedita debitis hic temporibus.</p>
-                    <button class="read-more">Read More..</button>
-                </section>
 
-            </div> --}}
+            <div id="contact" class="img5">
 
-            <div class="img5">
-
-                    <section class="text">
+                    <section data-aos="fade-down" id="text" class="text">
                             <h3>Contact Moi</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor consequuntur explicabo ipsum dolores sed adipisci, quis nostrum voluptatem iure libero. Consequuntur sequi magni consequatur non aliquam expedita debitis hic temporibus.</p>
-                            <a class="read-more" href="/contact"> read More..</a>
                         </section>
 
 
-                        <div class="contact-main"><!--Contact textbox area-->
+                        <div data-aos="fade-down" class="contact-main"><!--Contact textbox area-->
                         <!-- Forms-->
                         <form action="">
             
@@ -129,14 +192,16 @@
         
         
             <div class="footer">
-                    <div id="f-logo">
+                    {{!-- <div id="f-logo">
                             <img src="images/logo-white.svg" alt="">
-                        </div>
+                        </div> --}}
                 
                 <div class="social-media">
-                     <img src="images/instagram.svg" alt="">
-                    <img src="images/gmail.svg" alt="">
-                    <img src="images/linkedIn.svg" alt="">
+                    <a href="https://www.instagram.com/iffybaas/">instagram</a>
+
+                    <a href="https://github.com/iobasa">github</a>
+            
+                    <a href="https://www.linkedin.com/in/ife-obasa-567593191/">linkedIn</a>
                 </div>
         
                 <section id="copyright">

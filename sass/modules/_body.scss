@@ -1,228 +1,417 @@
 
-
-
 .showcase{
   width: 100%;
+  background-color: black;
 }
 
-
-
-
 .img{
-
-    background-image: url("../images/home.jpg");
-              /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  height:100vh;
+  height: 100vh;
 }
 
 .img1{
-
-    background-image: url("../images/hero-image.jpg");
-              /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  height:100vh;
+  padding-top:300px;
+    height: 100vh;
 }
 
+.img2{
+  height: 100vh;
+}
 
 .img3{
-
-    background-image: url("../images/place4.jpg");
-              /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  height:100vh;
+  height: 100vh;
 }
 
 .img5{
+  height: 100vh;
+}
+// .top{
+//   position: absolute;
+//   float: right;
+//   padding-top: 42%;
+//   padding-left: 95%;
+//   z-index: 99;
+//   width: 4%;
+// }
 
-    background-image: url("../images/contact-image.jpg");
-              /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  height:100vh;
+#skills{
+  padding-top: 150px;
 }
 
+.about{
+  margin-top: 20px;
+display: flex;
+flex-direction: row;
+}
+
+
 .p-text{
-  width: 90%;
-  margin-top: 250px;
-  float: left;
-  margin-left: 5%;
+width: 100%;
+margin-top: 0px;
+}
+
+.about img{
+position: absolute;
+float: right;
+padding-left: 30%;
+width: 80%;
+z-index: -1;
 }
 
 .p-text h3{
-  font-family: 'Poppins', sans-serif;
+font-family: 'Poppins', sans-serif;
 font-weight: 500;
 font-style: black;
-font-size: 10rem;
+font-size: 1.5rem;
 color: white;
 margin-bottom: 50px;
 }
 
-.p-text p{
-  font-family: 'Poppins', sans-serif;
+.p-text a{
+font-family: 'Poppins', sans-serif;
 font-weight: 500;
 font-style: black;
-line-height: 60px;
-font-size: 3.2rem;
-color: white;
-margin-bottom: 80px;
-}
-
-.text{
-  width: 90%;
-  padding-top: 100px;
-  margin-left: 5%;
-
-}
-
-.text h3{
-  font-family: 'Poppins', sans-serif;
-font-weight: 500;
-font-style: black;
-font-size: 7rem;
+font-size: 2rem;
+text-decoration: underline;
 color: white;
 margin-bottom: 50px;
 }
 
-.text p{
-  font-family: 'Poppins', sans-serif;
+
+.p-text h2{
+font-family: 'Poppins', sans-serif;
 font-weight: 500;
 font-style: black;
-font-size: 3.2rem;
+font-size: 1.2rem;
+color: white;
+margin-bottom: 50px;
+}
+
+.p-text b{
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+line-height: 70px;
+font-size: 3rem;
 color: white;
 margin-bottom: 30px;
 }
 
 
+.p-text p{
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+line-height: 50px;
+font-size: 2.2rem;
+color: white;
+margin-bottom: 0px;
+}
+
+.p-text span{
+font-family: 'Poppins', sans-serif;
+font-weight: 700;
+font-style: black;
+line-height: 60px;
+font-size: 7rem;
+color: white;
+margin-bottom: 30px;
+}
+
+
+@keyframes topFadeOut {
+0% {
+  position: absolute;
+  top: 0rem;
+  opacity: 0;
+}
+
+75% {
+  position: absolute;
+  top: 0%;
+  opacity: 1;
+}
+
+100% {
+  opacity: 1;
+}
+}
+
+.first-text {
+font-size: 4.4rem;
+position: absolute;
+left: 0.5rem;
+top: 10rem;
+opacity: 1;
+animation-name: topFadeOut;
+animation-duration: 10s;
+color: white;
+}
+
+.s-text{
+width: 55%;
+margin-top: 30px;
+float: left;
+margin-left: 50px;
+color: black;
+
+}
+
+.s-text h3{
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+font-size: 1.5rem;
+margin-bottom: 50px;
+}
+
+.s-text h2{
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+font-size: 1.2rem;
+margin-bottom: 50px;
+}
+
+.s-text b{
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+line-height: 50px;
+font-size: 3.2rem;
+margin-bottom: 30px;
+}
+
+
+.s-text p{
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+line-height: 80px;
+font-size: 5.2rem;
+
+margin-top: 50px;
+margin-bottom: 30px;
+}
+
+.s-text h2{
+font-family: 'Poppins', sans-serif;
+font-weight: 700;
+font-style: black;
+line-height: 60px;
+font-size: 7rem;
+margin-top: 20px;
+margin-bottom: 50px;
+}
+
+
+#text{
+  width: 90%;
+  margin-left: 10px;
+}
+
+#text h3{
+  font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+font-size: 5rem;
+color: white;
+margin-bottom: 50px;
+}
+
+#text p{
+  font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+font-size: 1.2rem;
+width: 100%;
+color: white;
+margin-bottom: 30px;
+}
 
 
 
 
 @media screen and (min-width: 48em) {
   
-
-
 .showcase{
   width: 100%;
+  background-color: black;
 }
 
-
-
-
 .img{
-
-    background-image: url("../images/home.jpg");
-              /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  height:100vh;
+  height: 100vh;
 }
 
 .img1{
-
-    background-image: url("../images/hero-image.jpg");
-              /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  height:100vh;
+  display: block;
+  height: 100vh;
 }
 
+.img2{
+  height: 100vh;
+}
 
 .img3{
-
-    background-image: url("../images/place4.jpg");
-              /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  height:100vh;
+  height: 100vh;
 }
-
 .img5{
-
-    background-image: url("../images/contact-image.jpg");
-              /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  height:100vh;
+  height: 100vh;
 }
+
+
+
+// .top{
+//   position: absolute;
+//   float: right;
+//   padding-top: 42%;
+//   padding-left: 95%;
+//   z-index: 99;
+//   width: 4%;
+// }
+
+
+.about{
+  margin-top: 20px;
+display: flex;
+flex-direction: row;
+}
+
 
 .p-text{
-  width: 90%;
-  margin-top: 250px;
-  float: left;
-  margin-left: 5%;
+width: 70%;
+margin-top: 0px;
+}
+
+.about img{
+position: absolute;
+float: right;
+padding-left: 30%;
+width: 80%;
+z-index: -1;
 }
 
 .p-text h3{
-  font-family: 'Poppins', sans-serif;
+font-family: 'Poppins', sans-serif;
 font-weight: 500;
 font-style: black;
-font-size: 10rem;
+font-size: 2.5rem;
 color: white;
+padding-bottom: 80px;
 margin-bottom: 50px;
 }
 
-.p-text p{
-  font-family: 'Poppins', sans-serif;
-font-weight: 500;
-font-style: black;
-line-height: 60px;
-font-size: 3.2rem;
-color: white;
-margin-bottom: 80px;
-}
-
-.text{
-  width: 90%;
-  padding-top: 100px;
-  margin-left: 5%;
-
-}
-
-.text h3{
-  font-family: 'Poppins', sans-serif;
-font-weight: 500;
-font-style: black;
-font-size: 7rem;
-color: white;
-margin-bottom: 50px;
-}
-
-.text p{
-  font-family: 'Poppins', sans-serif;
+.p-text a{
+font-family: 'Poppins', sans-serif;
 font-weight: 500;
 font-style: black;
 font-size: 2rem;
+text-decoration: underline;
+color: white;
+margin-bottom: 50px;
+}
+
+
+.p-text h2{
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+font-size: 1.2rem;
+color: white;
+margin-bottom: 50px;
+}
+
+.p-text b{
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+line-height: 70px;
+font-size: 4.5rem;
 color: white;
 margin-bottom: 30px;
 }
+
+
+.p-text p{
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+line-height: 50px;
+font-size: 3.2rem;
+color: white;
+margin-bottom: 0px;
+}
+
+.p-text span{
+font-family: 'Poppins', sans-serif;
+font-weight: 700;
+font-style: black;
+line-height: 60px;
+font-size: 8rem;
+color: white;
+margin-bottom: 30px;
+}
+
+
+@keyframes topFadeOut {
+0% {
+  position: absolute;
+  top: 0rem;
+  opacity: 0;
+}
+
+75% {
+  position: absolute;
+  top: 0%;
+  opacity: 1;
+}
+
+100% {
+  opacity: 1;
+}
+}
+
+.first-text {
+font-size: 4.4rem;
+position: absolute;
+left: 0.5rem;
+top: 10rem;
+opacity: 1;
+animation-name: topFadeOut;
+animation-duration: 10s;
+color: white;
+}
+
+
+
+#text{
+  width: 90%;
+  margin-left: 10px;
+}
+
+#text h3{
+  font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+font-size: 5rem;
+color: white;
+margin-bottom: 50px;
+}
+
+#text p{
+  font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+font-size: 1.2rem;
+width: 100%;
+color: white;
+margin-bottom: 30px;
+}
+
+#contact{
+  padding-top: 100px;
+}
+
+
 }
 
 
@@ -237,87 +426,199 @@ margin-bottom: 30px;
 
 .showcase{
     width: 100%;
+    background-color: black;
 }
 
-
-
 .img{
-
-    background-image: url("../images/home.jpg");
-              /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  height:700px;
+  height: 700px;
 }
 
 .img1{
-
-    background-image: url("../images/hero-image.jpg");
-              /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  height:700px;
+  padding-top: 300px;
+  height: 700px;
 }
-
-
-.img3{
-
-    background-image: url("../images/place4.jpg");
-              /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  height:700px;
-}
-
 .img5{
-
-    background-image: url("../images/contact-image.jpg");
-              /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  height:700px;
+  height: 700px;
 }
+
+// .top{
+//   position: absolute;
+//   float: right;
+//   padding-top: 42%;
+//   padding-left: 95%;
+//   z-index: 99;
+//   width: 4%;
+// }
+
+
+.about{
+  display: flex;
+  flex-direction: row;
+}
+
 
 .p-text{
-    width: 50%;
-    margin-top: 250px;
-    float: left;
-    margin-left: 50px;
+  width: 60%;
+  margin-top: -10px;
+}
 
+.about img{
+  position: absolute;
+  float: right;
+  padding-left: 60%;
+  width: 30%;
+  z-index: -1;
 }
 
 .p-text h3{
-    font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-style: black;
-  font-size: 5rem;
+  font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+  font-size: 1.5rem;
+  padding-bottom: 0px;
+  color: white;
+}
+
+.p-text a{
+  font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: white;
+  padding-top: -10px;
+  margin-bottom: 50px;
+}
+
+
+.p-text h2{
+  font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+  font-size: 1.2rem;
   color: white;
   margin-bottom: 50px;
 }
 
-.p-text p{
-    font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-style: black;
-  line-height: 40px;
-  font-size: 1.2rem;
+.p-text b{
+  font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+  line-height: 70px;
+  font-size: 3.5rem;
   color: white;
   margin-bottom: 30px;
 }
 
-.text{
+
+.p-text p{
+  font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+  line-height: 50px;
+  font-size: 2.2rem;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.p-text span{
+  font-family: 'Poppins', sans-serif;
+font-weight: 700;
+font-style: black;
+  line-height: 60px;
+  font-size: 7rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+
+@keyframes topFadeOut {
+  0% {
+    position: absolute;
+    top: 0rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 0%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.first-text {
+  font-size: 4.4rem;
+  position: absolute;
+  left: 0.5rem;
+  top: 10rem;
+  opacity: 1;
+  animation-name: topFadeOut;
+  animation-duration: 10s;
+  color: white;
+}
+
+.s-text{
+  width: 55%;
+  margin-top: 30px;
+  float: left;
+  margin-left: 50px;
+  color: black;
+
+}
+
+.s-text h3{
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+font-size: 1.5rem;
+margin-bottom: 50px;
+}
+
+.s-text h2{
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+font-size: 1.2rem;
+margin-bottom: 50px;
+}
+
+.s-text b{
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+line-height: 50px;
+font-size: 3.2rem;
+margin-bottom: 30px;
+}
+
+
+.s-text p{
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-style: black;
+line-height: 80px;
+font-size: 5.2rem;
+
+margin-top: 50px;
+margin-bottom: 30px;
+}
+
+.s-text h2{
+font-family: 'Poppins', sans-serif;
+font-weight: 700;
+font-style: black;
+line-height: 60px;
+font-size: 7rem;
+margin-top: 20px;
+margin-bottom: 50px;
+}
+
+
+#text{
     width: 30%;
     margin-top: 100px;
     float: left;
@@ -325,7 +626,7 @@ margin-bottom: 30px;
 
 }
 
-.text h3{
+#text h3{
     font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-style: black;
@@ -334,13 +635,17 @@ margin-bottom: 30px;
   margin-bottom: 50px;
 }
 
-.text p{
+#text p{
     font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-style: black;
   font-size: 1.2rem;
   color: white;
   margin-bottom: 30px;
+}
+
+#contact{
+  padding-top: 0px;
 }
 
 }

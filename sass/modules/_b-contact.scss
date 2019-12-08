@@ -12,7 +12,7 @@ height:700px;
 
 
 .read-more { 
-  padding: 26px 20px; 
+  padding: 16px 10px; 
   color: white; 
   background-color: black; 
   text-decoration: none;
@@ -42,125 +42,6 @@ height:700px;
   margin-right: auto;
   border-bottom: solid 2px #35AAA6;
 }
-
-  input
-	{
-		width: 200%
-	}
-
-	input[type=text]
-	{
-    height: 20%;
-	padding: 40px 10px;
-	margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-	}
-
-	input[type=email]
-	{
-	padding: 40px 10px;
-	margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-	}
-
-	input[type=message]
-	{
-		width: 400%;
-		color: black;
-		padding: 40px 30px;
-		margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-	}
-  
-  .hero-head1 {
-    margin-bottom: 130px;
-    margin-top: 130px;
-    display: flex;
-  flex-direction: column;
-  }
-  
-  .hero-head1 h1{
-    width: 40%;
-    float: left;
-    font-family: din-condensed,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 10rem;
-  color: white;
-  background-color: #35AAA6;
-  }
-
-  .contact label {
-    font-weight: 400;
-    font-size: 2.5rem;
-    font-style: normal;
-    color: #35AAA6;
-  }
-  
-  #Contact h3 {
-      font-weight: 700;
-      font-style: black;
-      font-size: 4rem;
-      text-align: center;
-      margin-top: 160px;
-    }
-    
-    .contact
-    {
-      margin-top: 180px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-        align-items: center;
-        margin-right: 35%;
-    }
-    
-    .contact p
-    {
-        padding-top: 40px;
-    }
-    
-    
-    .firstName
-    {
-      margin-right: 80px;
-      margin-bottom: 50px;
-    }
-    
-    .lastName
-    {
-      margin-right: 80px;
-      margin-bottom: 50px;
-    }
-    
-    .E-mail
-    {
-      margin-right: 80px;
-      margin-bottom: 50px;
-    }
-    
-    .message
-    {
-      margin-right: 95px;
-      margin-bottom: 50px;
-    }
-    
-    .message label {
-    font-weight: 400;
-    font-style: normal;
-    color: #35AAA6;
-      margin-bottom: 10px;
-    }
-    
-    .message textarea {
-      margin-top: 10px;
-      width: 205%;
-        height: 200px;
-        border: none;
-    }
 
 .send
 {
