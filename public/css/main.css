@@ -20,13 +20,13 @@
   flex-direction: column;
   justify-content: center;
   z-index: +1;
-  padding-top: 37.5em; }
+  padding-top: 10.5em; }
 
 .heroText h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-style: black;
-  font-size: 16rem;
+  font-size: 6rem;
   text-align: center;
   color: white;
   margin-bottom: 50px; }
@@ -37,16 +37,13 @@
 .heading {
   display: flex;
   flex-direction: row;
+  justify-items: center;
   justify-content: space-between;
   align-content: space-between;
-  position: absolute;
   z-index: +200; }
 
-#mainNav {
-  margin-right: -175%; }
-
 #logo {
-  width: 250px; }
+  width: 50%; }
 
 .closeM:hover {
   cursor: default; }
@@ -153,13 +150,13 @@
     flex-direction: column;
     justify-content: center;
     z-index: +1;
-    padding-top: 37.5em; }
+    padding-top: 25.5em; }
 
   .heroText h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-style: black;
-    font-size: 16rem;
+    font-size: 14rem;
     text-align: center;
     color: #f5f2f2;
     margin-bottom: 50px; }
@@ -172,11 +169,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
-    position: absolute;
     z-index: +200; }
 
-  #mainNav {
-    margin-right: -175%; }
+  .heading1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    position: relative;
+    z-index: +200; }
 
   #logo {
     width: 250px; }
@@ -294,7 +295,7 @@
     font-style: black;
     font-size: 12rem;
     text-align: center;
-    color: white;
+    color: #636363;
     margin-bottom: 50px; }
 
   .heroText h2 {
@@ -305,15 +306,18 @@
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
-    position: absolute;
-    z-index: +200;
-    top: 0px; }
+    z-index: +200; }
+
+  .heading1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    position: relative;
+    z-index: +200; }
 
   #logo {
     width: 200px; }
-
-  #mainNav {
-    margin-right: -425%; }
 
   .closeM:hover {
     cursor: default; }
@@ -414,8 +418,8 @@
   margin-right: 20px;
   border: 0;
   margin-top: 20px;
-  width: 85px;
-  height: 85px;
+  width: 50px;
+  height: 50px;
   transition: all 400ms ease; }
 
 #button.expanded {
@@ -454,7 +458,7 @@
   display: block !important; }
 
 #burgerCon li {
-  padding: 12px;
+  padding: 5px;
   border-top: thin 1px black;
   text-align: center;
   -webkit-animation-duration: 1s;
@@ -463,7 +467,7 @@
   animation-fill-mode: both; }
 
 #burgerMenu {
-  padding-top: 20em; }
+  padding-top: 10em; }
 
 #burgerCon a {
   -webkit-animation-duration: 1s;
@@ -474,7 +478,7 @@
   font-family: "Poppins",sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 7rem;
+  font-size: 3rem;
   color: black;
   opacity: 0.5; }
 
@@ -485,9 +489,8 @@
   font-family: "Poppins",sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 6rem;
-  position: absolute;
-  top: 3.5em; }
+  font-size: 4rem;
+  position: absolute; }
 
 .close h1 {
   font-family: din-condensed,sans-serif;
@@ -522,6 +525,119 @@
 #nav {
   width: 5%; }
 
+@media screen and (min-width: 48em) {
+  #button {
+    background: url("../images/menu.svg") center no-repeat;
+    float: right;
+    margin-right: 20px;
+    border: 0;
+    margin-top: 20px;
+    width: 70px;
+    height: 70px;
+    transition: all 400ms ease; }
+
+  #button.expanded {
+    /* browser prefixes for transform */
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    margin-left: auto;
+    /* default transform */
+    transform: rotate(90deg); }
+
+  #burgerCon {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 96%;
+    padding-top: 35%;
+    padding-bottom: 5%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: +1;
+    box-shadow: 10px 5px 5px grey;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.2s;
+    /* this should be off by default and  */
+    display: none; }
+
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  .show-mobile-nav {
+    display: block !important; }
+
+  #burgerCon li {
+    padding: 5px;
+    border-top: thin 1px black;
+    text-align: center;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+
+  #burgerMenu {
+    padding-top: 10em; }
+
+  #burgerCon a {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    text-decoration: none;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: black;
+    opacity: 0.5; }
+
+  .close {
+    float: right;
+    right: 20px;
+    color: black;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    position: absolute; }
+
+  .close h1 {
+    font-family: din-condensed,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    font-size: 5rem;
+    font-weight: bold; }
+
+  .close:hover {
+    cursor: default; }
+
+  .iconNav {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10%; }
+
+  .iconNav a {
+    width: 45px;
+    height: 30px; }
+
+  .iconNav img {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 80%; }
+
+  #nav {
+    width: 5%; } }
 @media screen and (min-width: 64em) {
   #button {
     background: url("../images/menu.svg") center no-repeat;
@@ -651,7 +767,7 @@
   height: 700px; }
 
 .read-more {
-  padding: 26px 20px;
+  padding: 16px 10px;
   color: white;
   background-color: black;
   text-decoration: none;
@@ -677,98 +793,6 @@
   margin-left: auto;
   margin-right: auto;
   border-bottom: solid 2px #35AAA6; }
-
-input {
-  width: 200%; }
-
-input[type=text] {
-  height: 20%;
-  padding: 40px 10px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none; }
-
-input[type=email] {
-  padding: 40px 10px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none; }
-
-input[type=message] {
-  width: 400%;
-  color: black;
-  padding: 40px 30px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none; }
-
-.hero-head1 {
-  margin-bottom: 130px;
-  margin-top: 130px;
-  display: flex;
-  flex-direction: column; }
-
-.hero-head1 h1 {
-  width: 40%;
-  float: left;
-  font-family: din-condensed,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 10rem;
-  color: white;
-  background-color: #35AAA6; }
-
-.contact label {
-  font-weight: 400;
-  font-size: 2.5rem;
-  font-style: normal;
-  color: #35AAA6; }
-
-#Contact h3 {
-  font-weight: 700;
-  font-style: black;
-  font-size: 4rem;
-  text-align: center;
-  margin-top: 160px; }
-
-.contact {
-  margin-top: 180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-right: 35%; }
-
-.contact p {
-  padding-top: 40px; }
-
-.firstName {
-  margin-right: 80px;
-  margin-bottom: 50px; }
-
-.lastName {
-  margin-right: 80px;
-  margin-bottom: 50px; }
-
-.E-mail {
-  margin-right: 80px;
-  margin-bottom: 50px; }
-
-.message {
-  margin-right: 95px;
-  margin-bottom: 50px; }
-
-.message label {
-  font-weight: 400;
-  font-style: normal;
-  color: #35AAA6;
-  margin-bottom: 10px; }
-
-.message textarea {
-  margin-top: 10px;
-  width: 205%;
-  height: 200px;
-  border: none; }
 
 .send {
   display: flex;
@@ -946,13 +970,13 @@ input[type=message] {
 .ctext {
   width: 100%;
   text-align: center;
-  padding-top: 350px; }
+  padding-top: 100px; }
 
 .ctext h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-style: black;
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
   margin-bottom: 50px; }
 
@@ -972,24 +996,24 @@ input[type=message] {
 
 .c-social-media img {
   margin: 10px;
-  width: 6%; }
+  width: 14%; }
 
 form {
   margin-top: -200px !important;
   height: 80%; }
 
 input {
-  width: 197%; }
+  width: 350%; }
 
 input[type=text] {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
   color: black;
-  font-size: 2rem;
+  font-size: 1rem;
   height: 10%;
-  padding: 20px 10px;
-  margin: 8px 0;
+  padding: 10px 10px;
+  margin: 0px 0;
   box-sizing: border-box;
   border: none;
   border: 1px solid #000;
@@ -999,9 +1023,9 @@ input[type=email] {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 1rem;
   color: black;
-  padding: 20px 10px;
+  padding: 10px 10px;
   margin: 8px 0;
   box-sizing: border-box;
   border: none;
@@ -1041,7 +1065,7 @@ input[type=message] {
 .contact-main label {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-style: normal;
   color: black; }
 
@@ -1049,7 +1073,7 @@ input[type=message] {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-style: black;
-  font-size: 4rem;
+  font-size: 1rem;
   text-align: center;
   margin-top: 160px; }
 
@@ -1061,25 +1085,25 @@ input[type=message] {
   align-items: center;
   height: 55%;
   width: 45%;
-  margin-left: 15%; }
+  margin-left: 8%; }
 
 .contact-main p {
   padding-top: 40px; }
 
 .c-name {
-  margin-right: 80px; }
+  margin-right: 47%; }
 
 label {
   border: black 1px; }
 
 .c-subject {
-  margin-right: 80px; }
+  margin-right: 47%; }
 
 .c-email {
-  margin-right: 80px; }
+  margin-right: 47%; }
 
 .Message {
-  margin-right: 95px; }
+  margin-right: 55%; }
 
 .Message label {
   font-family: 'Poppins', sans-serif;
@@ -1092,20 +1116,19 @@ label {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 1rem;
   color: black;
   padding: 10px 10px;
-  margin-top: 10px;
-  width: 200%;
-  height: 200px;
+  width: 390%;
+  height: 130px;
   border: 1px solid #000;
   border-radius: 0; }
 
 .send1 {
   display: flex;
   justify-content: center;
-  margin-right: -260px;
-  margin-top: 20px;
+  margin-right: -140px;
+  margin-top: 5px;
   margin-bottom: 50px; }
 
 .send1 {
@@ -1113,17 +1136,206 @@ label {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.3rem;
   color: white;
   background-color: black;
   padding-right: 1rem;
-  padding: .8rem 6rem;
+  padding: .3rem 3rem;
   width: 50%; }
 
 .send1:hover {
   color: black;
   background-color: #D0E4DD; }
 
+@media screen and (min-width: 48em) {
+  .c-img {
+    background-image: url("../images/contact-image.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 145em; }
+
+  .ctext {
+    width: 100%;
+    text-align: center;
+    padding-top: 200px; }
+
+  .ctext h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: black;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 50px; }
+
+  .ctext p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: black;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 30px; }
+
+  .c-social-media {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center; }
+
+  .c-social-media img {
+    margin: 10px;
+    width: 8%; }
+
+  form {
+    margin-top: -200px !important;
+    height: 80%; }
+
+  input {
+    width: 400%; }
+
+  input[type=text] {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 1rem;
+    height: 10%;
+    padding: 10px 10px;
+    margin: 0px 0;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid #000;
+    border-radius: 0; }
+
+  input[type=email] {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: black;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid #000;
+    border-radius: 0; }
+
+  input[type=message] {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    width: 400%;
+    color: black;
+    padding: 40px 30px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid #000;
+    border-radius: 0; }
+
+  .hero-head1 {
+    margin-bottom: 130px;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column; }
+
+  .hero-head1 h1 {
+    width: 40%;
+    float: left;
+    font-family: din-condensed,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10rem;
+    color: white;
+    background-color: #35AAA6; }
+
+  .contact-main label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+    color: black; }
+
+  #Contact-main h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: black;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 160px; }
+
+  .contact-main {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55%;
+    width: 45%;
+    margin-left: 8%; }
+
+  .contact-main p {
+    padding-top: 40px; }
+
+  .c-name {
+    margin-right: 47%; }
+
+  label {
+    border: black 1px; }
+
+  .c-subject {
+    margin-right: 47%; }
+
+  .c-email {
+    margin-right: 47%; }
+
+  .Message {
+    margin-right: 55%; }
+
+  .Message label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    margin-bottom: 10px; }
+
+  .Message textarea {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: black;
+    padding: 10px 10px;
+    width: 450%;
+    height: 130px;
+    border: 1px solid #000;
+    border-radius: 0; }
+
+  .send1 {
+    display: flex;
+    justify-content: center;
+    margin-right: -110%;
+    margin-top: 5px;
+    margin-bottom: 50px; }
+
+  .send1 {
+    float: right;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    background-color: black;
+    padding-right: 1rem;
+    padding: .3rem 3rem;
+    width: 50%; }
+
+  .send1:hover {
+    color: black;
+    background-color: #D0E4DD; } }
 @media screen and (min-width: 64em) {
   .c-img {
     background-image: url("../images/contact-image.jpg");
@@ -1315,218 +1527,301 @@ label {
     color: black;
     background-color: #D0E4DD; } }
 .showcase {
-  width: 100%; }
+  width: 100%;
+  background-color: black; }
 
 .img {
-  background-image: url("../images/home.jpg");
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh; }
 
 .img1 {
-  background-image: url("../images/hero-image.jpg");
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding-top: 300px;
+  height: 100vh; }
+
+.img2 {
   height: 100vh; }
 
 .img3 {
-  background-image: url("../images/place4.jpg");
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh; }
 
 .img5 {
-  background-image: url("../images/contact-image.jpg");
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh; }
 
+#skills {
+  padding-top: 150px; }
+
+.about {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row; }
+
 .p-text {
-  width: 90%;
-  margin-top: 250px;
-  float: left;
-  margin-left: 5%; }
+  width: 100%;
+  margin-top: 0px; }
+
+.about img {
+  position: absolute;
+  float: right;
+  padding-left: 30%;
+  width: 80%;
+  z-index: -1; }
 
 .p-text h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-style: black;
-  font-size: 10rem;
+  font-size: 1.5rem;
   color: white;
   margin-bottom: 50px; }
+
+.p-text a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: black;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: white;
+  margin-bottom: 50px; }
+
+.p-text h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: black;
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 50px; }
+
+.p-text b {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: black;
+  line-height: 70px;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 30px; }
 
 .p-text p {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-style: black;
-  line-height: 60px;
-  font-size: 3.2rem;
+  line-height: 50px;
+  font-size: 2.2rem;
   color: white;
-  margin-bottom: 80px; }
+  margin-bottom: 0px; }
 
-.text {
-  width: 90%;
-  padding-top: 100px;
-  margin-left: 5%; }
+.p-text span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: black;
+  line-height: 60px;
+  font-size: 7rem;
+  color: white;
+  margin-bottom: 30px; }
 
-.text h3 {
+@keyframes topFadeOut {
+  0% {
+    position: absolute;
+    top: 0rem;
+    opacity: 0; }
+  75% {
+    position: absolute;
+    top: 0%;
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+.first-text {
+  font-size: 4.4rem;
+  position: absolute;
+  left: 0.5rem;
+  top: 10rem;
+  opacity: 1;
+  animation-name: topFadeOut;
+  animation-duration: 10s;
+  color: white; }
+
+.s-text {
+  width: 55%;
+  margin-top: 30px;
+  float: left;
+  margin-left: 50px;
+  color: black; }
+
+.s-text h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-style: black;
+  font-size: 1.5rem;
+  margin-bottom: 50px; }
+
+.s-text h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: black;
+  font-size: 1.2rem;
+  margin-bottom: 50px; }
+
+.s-text b {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: black;
+  line-height: 50px;
+  font-size: 3.2rem;
+  margin-bottom: 30px; }
+
+.s-text p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: black;
+  line-height: 80px;
+  font-size: 5.2rem;
+  margin-top: 50px;
+  margin-bottom: 30px; }
+
+.s-text h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: black;
+  line-height: 60px;
   font-size: 7rem;
+  margin-top: 20px;
+  margin-bottom: 50px; }
+
+#text {
+  width: 90%;
+  margin-left: 10px; }
+
+#text h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: black;
+  font-size: 5rem;
   color: white;
   margin-bottom: 50px; }
 
-.text p {
+#text p {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-style: black;
-  font-size: 3.2rem;
+  font-size: 1.2rem;
+  width: 100%;
   color: white;
   margin-bottom: 30px; }
 
 @media screen and (min-width: 48em) {
   .showcase {
-    width: 100%; }
+    width: 100%;
+    background-color: black; }
 
   .img {
-    background-image: url("../images/home.jpg");
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100vh; }
 
   .img1 {
-    background-image: url("../images/hero-image.jpg");
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: block;
+    height: 100vh; }
+
+  .img2 {
     height: 100vh; }
 
   .img3 {
-    background-image: url("../images/place4.jpg");
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100vh; }
 
   .img5 {
-    background-image: url("../images/contact-image.jpg");
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100vh; }
 
+  .about {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row; }
+
   .p-text {
-    width: 90%;
-    margin-top: 250px;
-    float: left;
-    margin-left: 5%; }
+    width: 70%;
+    margin-top: 0px; }
+
+  .about img {
+    position: absolute;
+    float: right;
+    padding-left: 30%;
+    width: 80%;
+    z-index: -1; }
 
   .p-text h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-style: black;
-    font-size: 10rem;
+    font-size: 2.5rem;
+    color: white;
+    padding-bottom: 80px;
+    margin-bottom: 50px; }
+
+  .p-text a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: black;
+    font-size: 2rem;
+    text-decoration: underline;
     color: white;
     margin-bottom: 50px; }
+
+  .p-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: black;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 50px; }
+
+  .p-text b {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: black;
+    line-height: 70px;
+    font-size: 4.5rem;
+    color: white;
+    margin-bottom: 30px; }
 
   .p-text p {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-style: black;
-    line-height: 60px;
+    line-height: 50px;
     font-size: 3.2rem;
     color: white;
-    margin-bottom: 80px; }
+    margin-bottom: 0px; }
 
-  .text {
+  .p-text span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: black;
+    line-height: 60px;
+    font-size: 8rem;
+    color: white;
+    margin-bottom: 30px; }
+
+  @keyframes topFadeOut {
+    0% {
+      position: absolute;
+      top: 0rem;
+      opacity: 0; }
+    75% {
+      position: absolute;
+      top: 0%;
+      opacity: 1; }
+    100% {
+      opacity: 1; } }
+  .first-text {
+    font-size: 4.4rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 10rem;
+    opacity: 1;
+    animation-name: topFadeOut;
+    animation-duration: 10s;
+    color: white; }
+
+  #text {
     width: 90%;
-    padding-top: 100px;
-    margin-left: 5%; }
+    margin-left: 10px; }
 
-  .text h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-style: black;
-    font-size: 7rem;
-    color: white;
-    margin-bottom: 50px; }
-
-  .text p {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-style: black;
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 30px; } }
-@media screen and (min-width: 64em) {
-  .showcase {
-    width: 100%; }
-
-  .img {
-    background-image: url("../images/home.jpg");
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px; }
-
-  .img1 {
-    background-image: url("../images/hero-image.jpg");
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px; }
-
-  .img3 {
-    background-image: url("../images/place4.jpg");
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px; }
-
-  .img5 {
-    background-image: url("../images/contact-image.jpg");
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px; }
-
-  .p-text {
-    width: 50%;
-    margin-top: 250px;
-    float: left;
-    margin-left: 50px; }
-
-  .p-text h3 {
+  #text h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-style: black;
@@ -1534,22 +1829,175 @@ label {
     color: white;
     margin-bottom: 50px; }
 
+  #text p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: black;
+    font-size: 1.2rem;
+    width: 100%;
+    color: white;
+    margin-bottom: 30px; }
+
+  #contact {
+    padding-top: 100px; } }
+@media screen and (min-width: 64em) {
+  .showcase {
+    width: 100%;
+    background-color: black; }
+
+  .img {
+    height: 700px; }
+
+  .img1 {
+    padding-top: 300px;
+    height: 700px; }
+
+  .img5 {
+    height: 700px; }
+
+  .about {
+    display: flex;
+    flex-direction: row; }
+
+  .p-text {
+    width: 60%;
+    margin-top: -10px; }
+
+  .about img {
+    position: absolute;
+    float: right;
+    padding-left: 60%;
+    width: 30%;
+    z-index: -1; }
+
+  .p-text h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: black;
+    font-size: 1.5rem;
+    padding-bottom: 0px;
+    color: white; }
+
+  .p-text a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: black;
+    font-size: 2rem;
+    text-decoration: underline;
+    color: white;
+    padding-top: -10px;
+    margin-bottom: 50px; }
+
+  .p-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: black;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 50px; }
+
+  .p-text b {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: black;
+    line-height: 70px;
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 30px; }
+
   .p-text p {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-style: black;
-    line-height: 40px;
-    font-size: 1.2rem;
+    line-height: 50px;
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 0px; }
+
+  .p-text span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: black;
+    line-height: 60px;
+    font-size: 7rem;
     color: white;
     margin-bottom: 30px; }
 
-  .text {
+  @keyframes topFadeOut {
+    0% {
+      position: absolute;
+      top: 0rem;
+      opacity: 0; }
+    75% {
+      position: absolute;
+      top: 0%;
+      opacity: 1; }
+    100% {
+      opacity: 1; } }
+  .first-text {
+    font-size: 4.4rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 10rem;
+    opacity: 1;
+    animation-name: topFadeOut;
+    animation-duration: 10s;
+    color: white; }
+
+  .s-text {
+    width: 55%;
+    margin-top: 30px;
+    float: left;
+    margin-left: 50px;
+    color: black; }
+
+  .s-text h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: black;
+    font-size: 1.5rem;
+    margin-bottom: 50px; }
+
+  .s-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: black;
+    font-size: 1.2rem;
+    margin-bottom: 50px; }
+
+  .s-text b {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: black;
+    line-height: 50px;
+    font-size: 3.2rem;
+    margin-bottom: 30px; }
+
+  .s-text p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: black;
+    line-height: 80px;
+    font-size: 5.2rem;
+    margin-top: 50px;
+    margin-bottom: 30px; }
+
+  .s-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: black;
+    line-height: 60px;
+    font-size: 7rem;
+    margin-top: 20px;
+    margin-bottom: 50px; }
+
+  #text {
     width: 30%;
     margin-top: 100px;
     float: left;
     margin-left: 50px; }
 
-  .text h3 {
+  #text h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-style: black;
@@ -1557,13 +2005,16 @@ label {
     color: white;
     margin-bottom: 50px; }
 
-  .text p {
+  #text p {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-style: black;
     font-size: 1.2rem;
     color: white;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+
+  #contact {
+    padding-top: 0px; } }
 .about {
   background-image: url("../images/ife.png");
   /* Create the parallax scrolling effect */
@@ -1629,36 +2080,84 @@ body {
   color: white;
   margin-bottom: 30px; }
 
-.container {
-  padding-top: 0px;
+#more {
+  padding-top: 50px;
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 100vh; }
+  height: 700px; }
 
-.container img {
+#more img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: -60; }
+  width: 50%;
+  height: 700px;
+  z-index: +30; }
 
-.container li img {
+#more li img {
+  display: none;
+  margin-top: 100px;
+  position: absolute;
+  top: 30;
+  margin-left: 50%;
+  height: 400px;
+  width: 50%;
+  left: 100%;
+  z-index: 0; }
+
+#more li section {
+  margin-top: -10px;
+  position: absolute;
+  top: 30;
+  height: 400px;
+  width: 50%;
+  margin-left: 40%;
+  left: 100%;
+  z-index: 0; }
+
+#work {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 700px; }
+
+#work img {
   position: absolute;
   top: 0;
-  height: 100vh;
-  width: 100%;
+  left: 0;
+  width: 50%;
+  height: 700px;
+  z-index: +30; }
+
+#work li img {
+  display: none;
+  margin-top: 100px;
+  position: absolute;
+  top: 30;
+  margin-left: 50%;
+  height: 400px;
+  width: 50%;
   left: 100%;
-  z-index: -50; }
+  z-index: 0; }
+
+#work li section {
+  margin-top: -10px;
+  position: absolute;
+  top: 30;
+  height: 400px;
+  width: 50%;
+  margin-left: 40%;
+  left: 100%;
+  z-index: 0; }
 
 #nav {
-  margin-left: 3%;
-  margin-top: 300px;
-  width: 100%;
-  height: 100vh;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-left: 3%;
+  margin-top: 50px;
+  width: 100%;
+  height: 300px; }
 
 #nav h1 {
   padding: 20px;
@@ -1666,21 +2165,23 @@ body {
   text-align: right; }
 
 #nav ul {
-  margin-top: 250px;
+  margin-top: 0px;
   display: flex;
   width: 100%;
-  height: 30vh;
+  height: 200px;
+  float: right;
   list-style: none;
   flex-direction: column; }
 
+.ul {
+  margin-top: 0px; }
+
 #nav li {
-  margin-top: 50px;
-  margin-left: 5%;
-  height: 200px;
-  margin-bottom: 50px; }
+  height: 300px;
+  padding: 10px; }
 
 #nav p {
-  font-size: 2.3rem;
+  font-size: 1.3rem;
   margin-bottom: 10px; }
 
 #nav li a {
@@ -1688,21 +2189,38 @@ body {
   border: 2px green !important;
   height: 200px;
   z-index: 1;
-  font-size: 4.5rem;
-  display: block;
-  width: 100%;
+  font-size: 2.5rem;
+  width: 900px;
   color: white;
-  text-align: left;
+  text-align: center;
   text-decoration: none; }
-
-#nav li a:hover {
-  background-color: rgba(192, 192, 192, 0.5); }
 
 #nav li a:hover + img {
   left: 0px;
   -webkit-animation: zoomin 5s 1;
   animation: zoomin 10s 1; }
 
+#nav li a:hover + section {
+  font-size: 4.4rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 2.9rem;
+  opacity: 1;
+  animation-name: topFadeOut;
+  animation-duration: 2s;
+  color: white; }
+
+@keyframes topFadeOut {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0; }
+  75% {
+    position: absolute;
+    top: 25%;
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
 @keyframes zoomin {
   0% {
     -webkit-transform: scale(1); }
@@ -1711,132 +2229,6 @@ body {
 .p-end {
   height: 480px; }
 
-@media screen and (min-width: 48em) {
-  body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #fff; }
-
-  .ul {
-    width: 50%; }
-
-  #portf-name {
-    width: 270px;
-    height: 100%;
-    border: white 3px;
-    border-style: dotted;
-    text-decoration: none;
-    font-size: 3rem;
-    color: white; }
-
-  #portf-name:hover {
-    width: 270px;
-    height: 100%;
-    border: white 3px;
-    border-style: dotted;
-    text-decoration: none;
-    font-size: 3rem;
-    opacity: 0.5;
-    background-color: #fff;
-    color: white; }
-
-  #portf-name h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-style: black;
-    font-size: 10rem;
-    color: white;
-    margin-bottom: 50px;
-    position: fixed; }
-
-  .port-info p {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-style: black;
-    font-size: 1.2rem;
-    color: white;
-    margin-bottom: 30px; }
-
-  .container {
-    padding-top: 0px;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh; }
-
-  .container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -60; }
-
-  .container li img {
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    left: 100%;
-    z-index: -50; }
-
-  #nav {
-    display: flex;
-    flex-direction: row;
-    margin-left: 0%;
-    margin-top: 00px;
-    width: 100%;
-    height: 100vh; }
-
-  #nav h1 {
-    padding: 20px;
-    color: #ccc;
-    text-align: right; }
-
-  #nav ul {
-    margin-top: 250px;
-    display: flex;
-    width: 100%;
-    height: 30vh;
-    list-style: none;
-    flex-direction: column; }
-
-  #nav li {
-    margin-top: 50px;
-    margin-left: 5%;
-    height: 200px;
-    margin-bottom: 50px; }
-
-  #nav p {
-    font-size: 2.3rem;
-    margin-bottom: 10px; }
-
-  #nav li a {
-    height: 200px;
-    z-index: 1;
-    font-size: 4.5rem;
-    display: block;
-    width: 100%;
-    color: white;
-    text-align: left;
-    text-decoration: none; }
-
-  #nav li a:hover {
-    background-color: rgba(192, 192, 192, 0.5); }
-
-  #nav li a:hover + img {
-    left: 0px;
-    -webkit-animation: zoomin 5s 1;
-    animation: zoomin 10s 1; }
-
-  @keyframes zoomin {
-    0% {
-      -webkit-transform: scale(1); }
-    100% {
-      -webkit-transform: scale(1.5); } }
-  .p-end {
-    height: 480px; } }
 @media screen and (min-width: 64em) {
   body {
     font-family: 'Poppins', sans-serif;
@@ -1881,34 +2273,82 @@ body {
     color: white;
     margin-bottom: 30px; }
 
-  .container {
+  #more {
     padding-top: 50px;
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 607px; }
+    height: 700px; }
 
-  .container img {
+  #more img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50%;
     height: 700px;
-    z-index: -60; }
+    z-index: +30; }
 
-  .container li img {
+  #more li img {
+    display: block;
+    margin-top: 100px;
+    position: absolute;
+    top: 30;
+    margin-left: 50%;
+    height: 400px;
+    width: 50%;
+    left: 100%;
+    z-index: 0; }
+
+  #more li section {
+    margin-top: -10px;
+    position: absolute;
+    top: 30;
+    height: 400px;
+    width: 50%;
+    margin-left: 40%;
+    left: 100%;
+    z-index: 0; }
+
+  #work {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 700px; }
+
+  #work img {
     position: absolute;
     top: 0;
+    left: 0;
+    width: 50%;
     height: 700px;
-    width: 100%;
+    z-index: +30; }
+
+  #work li img {
+    display: block;
+    margin-top: 100px;
+    position: absolute;
+    top: 30;
+    margin-left: 50%;
+    height: 400px;
+    width: 50%;
     left: 100%;
-    z-index: -50; }
+    z-index: 0; }
+
+  #work li section {
+    margin-top: -10px;
+    position: absolute;
+    top: 30;
+    height: 400px;
+    width: 50%;
+    margin-left: 40%;
+    left: 100%;
+    z-index: 0; }
 
   #nav {
     display: flex;
     flex-direction: column;
     margin-left: 3%;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 100%;
     height: 300px; }
 
@@ -1922,15 +2362,16 @@ body {
     display: flex;
     width: 100%;
     height: 200px;
+    float: right;
     list-style: none;
-    flex-direction: row; }
+    flex-direction: column; }
 
   .ul {
     margin-top: 0px; }
 
   #nav li {
-    margin-left: 5%;
-    height: 300px; }
+    height: 300px;
+    padding: 10px; }
 
   #nav p {
     font-size: 1.3rem;
@@ -1942,20 +2383,37 @@ body {
     height: 200px;
     z-index: 1;
     font-size: 2.5rem;
-    display: block;
-    width: 340px;
+    width: 900px;
     color: white;
-    text-align: left;
+    text-align: center;
     text-decoration: none; }
-
-  #nav li a:hover {
-    background-color: rgba(192, 192, 192, 0.5); }
 
   #nav li a:hover + img {
     left: 0px;
     -webkit-animation: zoomin 5s 1;
     animation: zoomin 10s 1; }
 
+  #nav li a:hover + section {
+    font-size: 4.4rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 2.9rem;
+    opacity: 1;
+    animation-name: topFadeOut;
+    animation-duration: 2s;
+    color: white; }
+
+  @keyframes topFadeOut {
+    0% {
+      position: absolute;
+      top: -3rem;
+      opacity: 0; }
+    75% {
+      position: absolute;
+      top: 25%;
+      opacity: 1; }
+    100% {
+      opacity: 1; } }
   @keyframes zoomin {
     0% {
       -webkit-transform: scale(1); }
@@ -1979,6 +2437,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: -27%;
   height: 700px; }
 
 #ana-logo {
@@ -1989,8 +2448,8 @@ body {
   margin-left: 10%; }
 
 .hero-p h2 {
+  padding-top: 40%;
   padding-left: 5%;
-  padding-top: 18%;
   color: white;
   font-weight: 700;
   margin-top: 0px;
@@ -2003,7 +2462,7 @@ body {
   color: white;
   font-weight: 700;
   margin-top: 0px;
-  font-size: 10rem;
+  font-size: 7rem;
   text-align: center; }
 
 .hero-p span {
@@ -2034,6 +2493,7 @@ body {
   margin-bottom: 100px; }
 
 .layout img {
+  width: 90%;
   border: 1px solid grey; }
 
 .layout1 {
@@ -2076,7 +2536,7 @@ body {
   margin-bottom: 20px; }
 
 .pro-desc {
-  margin-top: 5%;
+  margin-top: 9%;
   margin-left: 25%;
   display: flex;
   flex-direction: column;
@@ -2090,7 +2550,7 @@ body {
   line-height: 25px; }
 
 .pro-desc h3 {
-  font-size: 6.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 20px; }
 
@@ -2125,6 +2585,169 @@ body {
   box-shadow: 10px 10px 5px 5px grey;
   width: 40%; }
 
+@media screen and (min-width: 48em) {
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black; }
+
+  .body1 {
+    background-color: #fff;
+    color: black; }
+
+  .hero-p {
+    background-image: url("../images/rose_glasses.jpg");
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px; }
+
+  #ana-logo {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin-left: 10%; }
+
+  .hero-p h2 {
+    padding-left: 5%;
+    padding-top: 30%;
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 3rem;
+    text-align: left; }
+
+  .hero-p p {
+    padding-top: 10%;
+    font-family: "Raleway";
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 10rem;
+    text-align: center; }
+
+  .hero-p span {
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 2.5rem;
+    text-align: center; }
+
+  .desc {
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f8faf2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+
+  .layout {
+    background-color: #ebe4e4;
+    background-image: linear-gradient(white, #fa6161, white);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 100px; }
+
+  .layout img {
+    width: 100%;
+    border: 1px solid grey; }
+
+  .layout1 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 100px; }
+
+  .layout1 img {
+    width: 100%;
+    border: 1px solid grey; }
+
+  .role {
+    margin-left: 0%;
+    margin-top: 50px; }
+
+  .role p {
+    margin-bottom: 20px; }
+
+  .pro-desc1 {
+    margin-top: 8%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 50%; }
+
+  .pro-desc1 p {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px; }
+
+  .pro-desc1 h3 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 20px; }
+
+  .pro-desc {
+    margin-top: 5%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 50%; }
+
+  .pro-desc p {
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px; }
+
+  .pro-desc h3 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 20px; }
+
+  .pink {
+    background-color: #c3eb34;
+    height: 70%;
+    margin-top: -500px; }
+
+  #mockup {
+    margin-left: 0%;
+    width: 90%;
+    position: relative;
+    z-index: +1; }
+
+  #mockup img {
+    margin-left: 0%;
+    width: 110%; }
+
+  .plan {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #c3eb34;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+
+  .plan h3 {
+    font-weight: 700;
+    font-size: 1.2rem; }
+
+  .plan img {
+    box-shadow: 10px 10px 5px 5px grey;
+    width: 40%; } }
 @media screen and (min-width: 64em) {
   body {
     font-family: 'Poppins', sans-serif;
@@ -2287,100 +2910,108 @@ body {
   .plan img {
     box-shadow: 10px 10px 5px 5px grey;
     width: 40%; } }
-.body3 {
-  background-color: #fff; }
+.hero-p2 {
+  background-image: url("../images/musicmixer.jpg");
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -105px;
+  height: 700px; }
 
-.pro-des {
-  margin-top: 8%;
-  margin-left: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 70%; }
-
-.pro-des p {
-  font-size: 1.2rem;
-  font-family: 'Raleway', sans-serif;
-  line-height: 25px; }
-
-.pro-des h3 {
-  font-size: 4.5rem;
+.hero-p2 h2 {
+  padding-left: 5%;
+  padding-top: 40%;
+  color: white;
   font-weight: 700;
-  margin-bottom: 20px; }
+  margin-top: 0px;
+  font-size: 2.5rem;
+  text-align: left; }
 
-.info {
-  display: flex;
-  flex-direction: row; }
+.hero-p2 p {
+  padding-top: 10%;
+  font-family: "Raleway";
+  color: white;
+  font-weight: 700;
+  margin-top: 0px;
+  font-size: 4rem;
+  text-align: center; }
 
-.info img {
-  margin-top: 150px;
-  width: 60%; }
+.hero-p2 span {
+  color: white;
+  font-weight: 700;
+  margin-top: 0px;
+  font-size: 2.5rem;
+  text-align: center; }
 
-.desc {
-  display: none; }
+@media screen and (min-width: 48em) {
+  .hero-p2 {
+    background-image: url("../images/musicmixer.jpg");
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -20%;
+    height: 700px; }
 
-#description {
-  margin-top: 100px;
-  padding-bottom: 50px;
-  height: 70%;
-  overflow-y: auto;
-  overflow: hidden;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  /* required */
-  width: 50%;
-  overflow: auto; }
-
-@media screen and (min-width: 64em) {
-  .body3 {
-    background-color: #fff; }
-
-  .pro-des {
-    margin-top: 8%;
-    margin-left: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 80%; }
-
-  .pro-des p {
-    font-size: 1.2rem;
-    font-family: 'Raleway', sans-serif;
-    line-height: 25px; }
-
-  .pro-des h3 {
-    font-size: 4.5rem;
+  .hero-p2 h2 {
+    padding-left: 5%;
+    padding-top: 20%;
+    color: white;
     font-weight: 700;
-    margin-bottom: 20px; }
+    margin-top: 0px;
+    font-size: 3rem;
+    text-align: left; }
 
-  .info {
-    display: flex;
-    flex-direction: row; }
+  .hero-p2 p {
+    padding-top: 10%;
+    font-family: "Raleway";
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 6.5rem;
+    text-align: center; }
 
-  .info img {
-    margin-top: 120px; }
+  .hero-p2 span {
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 2.5rem;
+    text-align: center; } }
+@media screen and (min-width: 64em) {
+  .hero-p2 {
+    background-image: url("../images/musicmixer.jpg");
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -105px;
+    height: 700px; }
 
-  .desc {
-    display: none; }
+  .hero-p2 h2 {
+    padding-left: 5%;
+    padding-top: 10%;
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 3rem;
+    text-align: left; }
 
-  #description {
-    margin-top: 60px;
-    padding-bottom: 50px;
-    height: 70%;
-    overflow-y: auto;
-    overflow: hidden;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    /* required */
-    width: 60%;
-    overflow: auto; }
+  .hero-p2 p {
+    padding-top: 10%;
+    font-family: "Raleway";
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 6.5rem;
+    text-align: center; }
 
-  .info img {
-    width: 50%; } }
+  .hero-p2 span {
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 2.5rem;
+    text-align: center; } }
 .arrow {
   margin-top: 10%;
   padding-bottom: 5%;
@@ -2410,7 +3041,7 @@ body {
   line-height: 25px; }
 
 .desc1 h3 {
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 20px; }
 
@@ -2433,33 +3064,34 @@ body {
   font-weight: 700;
   margin-bottom: 20px; }
 
-.hero-p2 {
+.hero-p3 {
   background-image: url("../images/wood.jpg");
   /* Create the parallax scrolling effect */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: -26%;
   height: 700px; }
 
-.hero-p2 h2 {
+.hero-p3 h2 {
   padding-left: 5%;
-  padding-top: 16%;
+  padding-top: 30%;
   color: white;
   font-weight: 700;
   margin-top: 0px;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: left; }
 
-.hero-p2 p {
+.hero-p3 p {
   padding-top: 10%;
   font-family: "Raleway";
   color: white;
   font-weight: 700;
   margin-top: 0px;
-  font-size: 7rem;
+  font-size: 4.5rem;
   text-align: center; }
 
-.hero-p2 span {
+.hero-p3 span {
   color: white;
   font-weight: 700;
   margin-top: 0px;
@@ -2472,9 +3104,149 @@ body {
   margin-left: 5%;
   width: 100%; }
 
-.info img {
-  width: 50%; }
+.info {
+  display: flex;
+  flex-direction: row; }
 
+.info img {
+  margin-top: 150px;
+  width: 100%; }
+
+.desc {
+  display: none; }
+
+#description {
+  display: none;
+  margin-top: 100px;
+  padding-bottom: 50px;
+  height: 70%;
+  overflow-y: auto;
+  overflow: hidden;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  /* required */
+  width: 50%;
+  overflow: auto; }
+
+@media screen and (min-width: 48em) {
+  .arrow {
+    margin-top: 10%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+
+  .arrow a {
+    width: 10%; }
+
+  .arrow img {
+    width: 50%; }
+
+  .desc1 {
+    margin-top: 8%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    margin-bottom: 10%; }
+
+  .desc1 p {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px; }
+
+  .desc1 h3 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 20px; }
+
+  .pro-desc2 {
+    margin-top: 8%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 80%; }
+
+  .pro-desc2 p {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px; }
+
+  .pro-desc2 h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px; }
+
+  .hero-p3 {
+    background-image: url("../images/wood.jpg");
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px; }
+
+  .hero-p3 h2 {
+    padding-left: 5%;
+    padding-top: 20%;
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 3rem;
+    text-align: left; }
+
+  .hero-p3 p {
+    padding-top: 10%;
+    font-family: "Raleway";
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 6rem;
+    text-align: center; }
+
+  .hero-p3 span {
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 2.5rem;
+    text-align: center; }
+
+  .int-video {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    width: 100%;
+    margin-bottom: 10%; }
+
+  .info {
+    display: flex;
+    flex-direction: row; }
+
+  .info img {
+    display: block;
+    margin-top: 150px;
+    width: 40%; }
+
+  .desc {
+    display: none; }
+
+  #description {
+    display: block;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    height: 70%;
+    overflow-y: auto;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    /* required */
+    width: 50%;
+    overflow: auto; } }
 @media screen and (min-width: 64em) {
   .arrow {
     margin-top: 10%;
@@ -2528,7 +3300,7 @@ body {
     font-weight: 700;
     margin-bottom: 20px; }
 
-  .hero-p2 {
+  .hero-p3 {
     background-image: url("../images/wood.jpg");
     /* Create the parallax scrolling effect */
     background-position: center;
@@ -2536,7 +3308,7 @@ body {
     background-size: cover;
     height: 700px; }
 
-  .hero-p2 h2 {
+  .hero-p3 h2 {
     padding-left: 5%;
     padding-top: 10%;
     color: white;
@@ -2545,7 +3317,7 @@ body {
     font-size: 3rem;
     text-align: left; }
 
-  .hero-p2 p {
+  .hero-p3 p {
     padding-top: 10%;
     font-family: "Raleway";
     color: white;
@@ -2554,18 +3326,42 @@ body {
     font-size: 7rem;
     text-align: center; }
 
-  .hero-p2 span {
+  .hero-p3 span {
     color: white;
     font-weight: 700;
     margin-top: 0px;
     font-size: 2.5rem;
     text-align: center; }
 
+  .pro-des p {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px; }
+
+  .pro-des h3 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 20px; }
+
   .int-video {
     display: flex;
     justify-content: center;
     margin-left: 5%;
     width: 100%; }
+
+  #description {
+    margin-top: 60px;
+    padding-bottom: 50px;
+    height: 70%;
+    overflow-y: auto;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    /* required */
+    width: 60%;
+    overflow: auto;
+    display: block; }
 
   .info img {
     width: 50%; } }
@@ -2602,6 +3398,39 @@ body {
   font-size: 2.5rem;
   text-align: center; }
 
+@media screen and (min-width: 48em) {
+  .hero-p6 {
+    background-image: url("../images/commercial.jpg");
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px; }
+
+  .hero-p6 h2 {
+    padding-left: 5%;
+    padding-top: 20%;
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 3rem;
+    text-align: left; }
+
+  .hero-p6 p {
+    padding-top: 10%;
+    font-family: "Raleway";
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 6.5rem;
+    text-align: center; }
+
+  .hero-p6 span {
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 2.5rem;
+    text-align: center; } }
 @media screen and (min-width: 64em) {
   .hero-p6 {
     background-image: url("../images/commercial.jpg");
@@ -2691,7 +3520,7 @@ body {
   font-style: normal; }
 
 .end {
-  height: 13.125em; }
+  height: 6.3em; }
 
 .footer {
   background-color: black;
@@ -2743,9 +3572,9 @@ body {
   align-content: center;
   justify-content: center; }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 48em) {
   .end {
-    height: 280px; }
+    height: 10.3em; }
 
   .footer {
     background-color: black;
@@ -2796,5 +3625,74 @@ body {
     flex-direction: row;
     align-content: center;
     justify-content: center; } }
+@media screen and (min-width: 64em) {
+  .end {
+    height: 280px; }
+
+  .footer {
+    background-color: black;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */ }
+
+  #f-logo {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center; }
+
+  #f-logo img {
+    width: 10%;
+    justify-content: center;
+    align-content: center;
+    align-self: center; }
+
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-content: right;
+    justify-content: right; }
+
+  .social-media a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: black;
+    color: white;
+    font-size: 3.2rem;
+    text-align: right;
+    text-decoration: none; }
+
+  .social-media a:hover {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: black;
+    color: black;
+    font-size: 3.2rem;
+    text-align: right;
+    text-decoration: none; }
+
+  #copyright {
+    padding-top: -80px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-content: left;
+    justify-content: left;
+    color: white; }
+
+  #copyright p {
+    display: flex;
+    flex-direction: row;
+    padding-top: -80px; } }
 
 /*# sourceMappingURL=main.css.map */

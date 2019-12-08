@@ -17,6 +17,218 @@ color: black;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+margin-top:-27%;
+
+height: 700px;
+}
+
+
+
+#ana-logo{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin-left: 10%;
+}
+
+.hero-p h2{
+    padding-top: 40%;
+    padding-left: 5%;
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 3rem;
+    text-align: left;
+}
+
+.hero-p p{
+    padding-top: 10%;
+    font-family: "Raleway";
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 7rem;
+    text-align: center;
+}
+
+.hero-p span{
+    color: white;
+    font-weight: 700;
+    margin-top: 0px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.desc{
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f8faf2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.layout{
+    background-color: #ebe4e4;
+    background-image: linear-gradient( white, #fa6161, white);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+.layout img{
+    width: 90%;
+    border: 1px solid grey;
+}
+
+.layout1{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+.layout1 img{
+    width: 100%;
+    border: 1px solid grey;
+}
+
+.role{
+    margin-left: 0%;
+    margin-top: 50px;
+}
+
+.role p{
+    margin-bottom: 20px;
+}
+
+
+.pro-desc1{
+    margin-top: 8%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+}
+
+.pro-desc1 p{
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px;
+}
+
+.pro-desc1 h3{
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.pro-desc{
+    margin-top: 9%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+}
+
+.pro-desc p{
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px;
+}
+
+.pro-desc h3{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.pink{
+    background-color: #c3eb34;
+    height: 70%;
+    margin-top: -500px;
+}
+
+#mockup{
+    margin-left: 0%;
+    width: 90%;
+    position: relative;
+    z-index: +1;
+}
+
+#mockup img{
+    margin-left: 0%;
+    width: 110%;
+}
+
+.plan{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #c3eb34;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.plan h3{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.plan img{
+    box-shadow:  10px 10px 5px 5px grey;
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 48em){
+    
+body{
+	font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-style: normal;
+color: black;
+}
+
+.body1{
+    background-color: #fff;
+    color: black;
+}
+
+.hero-p{
+    background-image: url("../images/rose_glasses.jpg");
+            /* Create the parallax scrolling effect */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 
 height: 700px;
 }
@@ -33,7 +245,7 @@ height: 700px;
 
 .hero-p h2{
     padding-left: 5%;
-    padding-top: 18%;
+    padding-top: 30%;
     color: white;
     font-weight: 700;
     margin-top: 0px;
@@ -82,6 +294,7 @@ height: 700px;
 }
 
 .layout img{
+    width: 100%;
     border: 1px solid grey;
 }
 
@@ -149,7 +362,7 @@ height: 700px;
 }
 
 .pro-desc h3{
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -192,6 +405,9 @@ height: 700px;
 }
 
 
+
+
+}
 
 
 

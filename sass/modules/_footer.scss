@@ -1,5 +1,5 @@
 .end{
-  height:13.125em;
+  height:6.3em;
 
 
 }
@@ -66,10 +66,12 @@
   justify-content: center;
 }
 
-@media screen and (min-width: 64em) {
 
-.end{
-    height: 280px;
+
+
+@media screen and (min-width: 48em) {
+  .end{
+    height:10.3em;
   
   
   }
@@ -134,6 +136,99 @@
     flex-direction: row;
     align-content: center;
     justify-content: center;
+  }
+  
+  
+}
+
+
+
+
+@media screen and (min-width: 64em) {
+
+.end{
+    height: 280px;
+  
+  
+  }
+  
+  .footer{
+    background-color: black;
+  
+    width: 100%;
+  
+    padding-top: 5%;
+    padding-bottom: 5%;
+  
+        position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+  
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+  
+  }
+  
+  #f-logo{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  #f-logo img{
+    width: 10%;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+  }
+  
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-content: right;
+    justify-content: right;
+  }
+  
+  .social-media a{
+    font-family: 'Raleway', sans-serif;
+font-weight: 500;
+font-style: black;
+color: white;
+  font-size: 3.2rem;
+  text-align: right;
+  text-decoration: none;
+  }
+
+  .social-media a:hover{
+    font-family: 'Raleway', sans-serif;
+font-weight: 500;
+font-style: black;
+color: black;
+  font-size: 3.2rem;
+  text-align: right;
+  text-decoration: none;
+  }
+  
+  #copyright{
+   padding-top: -80px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-content: left;
+    justify-content: left;
+    color: white;
+  }
+  
+  #copyright p {
+    display: flex;
+    flex-direction: row;
+    padding-top: -80px;
   }
   
 }

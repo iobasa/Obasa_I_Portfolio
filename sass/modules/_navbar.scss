@@ -5,8 +5,8 @@
     margin-right: 20px;
     border: 0;
     margin-top: 20px;
-    width: 85px;
-    height: 85px;
+    width: 50px;
+    height: 50px;
     transition: all 400ms ease;
   }
 
@@ -60,7 +60,7 @@
 }
 
 #burgerCon li {
-  padding: 12px;
+  padding: 5px;
   border-top: thin 1px black;
   text-align: center;
   -webkit-animation-duration:1s;
@@ -70,7 +70,7 @@ animation-fill-mode:both;
 }
 
 #burgerMenu {
-  padding-top: 20em;
+  padding-top: 10em;
 }
 
 #burgerCon a {
@@ -82,7 +82,7 @@ animation-fill-mode:both;
   font-family: "Poppins",sans-serif;
 font-weight: 400;
 font-style: normal;
-font-size: 7rem;
+font-size: 3rem;
 color: black;
 opacity: 0.5;
 }
@@ -94,9 +94,8 @@ opacity: 0.5;
   font-family: "Poppins",sans-serif;
 font-weight: 400;
 font-style: normal;
-font-size: 6rem;
+font-size: 4rem;
   position: absolute;
-  top: 3.5em;
 }
 
 .close h1 {
@@ -138,6 +137,161 @@ font-size: 2rem;
     #nav{
       width: 5%;
     }
+
+
+
+
+
+
+    @media screen and (min-width: 48em) {
+       
+#button {
+  background: url("../images/menu.svg") center no-repeat;
+  float: right;
+  margin-right: 20px;
+  border: 0;
+  margin-top: 20px;
+  width: 70px;
+  height: 70px;
+  transition: all 400ms ease;
+}
+
+#button.expanded {
+  /* browser prefixes for transform */
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  margin-left: auto;
+
+  /* default transform */
+  transform: rotate(90deg);
+}
+
+
+#burgerCon {
+  background-color: cornflowerblue;
+    width: 100%;
+height: 96%;
+
+padding-top: 35%;
+padding-bottom: 5%;
+
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: +1;
+box-shadow: 10px 5px 5px grey;
+
+opacity: 1;
+animation-name: fadeInOpacity;
+animation-iteration-count: 1;
+animation-timing-function: ease-in;
+animation-duration: 0.2s;
+
+
+/* this should be off by default and  */
+display: none;
+}
+
+@keyframes fadeInOpacity {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+
+.show-mobile-nav {
+display: block !important;
+}
+
+#burgerCon li {
+padding: 5px;
+border-top: thin 1px black;
+text-align: center;
+-webkit-animation-duration:1s;
+animation-duration:1s;
+-webkit-animation-fill-mode:both;
+animation-fill-mode:both;
+}
+
+#burgerMenu {
+padding-top: 10em;
+}
+
+#burgerCon a {
+  -webkit-animation-duration:1s;
+animation-duration:1s;
+-webkit-animation-fill-mode:both;
+animation-fill-mode:both;
+text-decoration: none;
+font-family: "Poppins",sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 3rem;
+color: black;
+opacity: 0.5;
+}
+
+.close {
+float: right;
+right: 20px;
+color: black;
+font-family: "Poppins",sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 4rem;
+position: absolute;
+}
+
+.close h1 {
+font-family: din-condensed,sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 2rem;
+position: absolute;
+top: 40px;
+right: 25px;
+font-size: 5rem;
+font-weight: bold;
+}
+
+.close:hover{
+cursor: default;
+}
+
+
+.iconNav {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+.iconNav a {
+  width: 45px;
+  height: 30px;
+}
+
+.iconNav img {
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 80%;
+}
+  
+  #nav{
+    width: 5%;
+  }
+
+
+
+
+    }
+
+
+
+
 
 
 

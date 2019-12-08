@@ -5,14 +5,14 @@
     flex-direction: column;
     justify-content: center;
     z-index: +1;
-    padding-top: 37.5em;
+    padding-top: 10.5em;
   }
   
   .heroText h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-style: black;
-    font-size: 16rem;
+    font-size: 6rem;
     text-align: center;
       color: white;
     margin-bottom: 50px;
@@ -26,18 +26,14 @@
 .heading{
   display: flex;
   flex-direction: row;
+  justify-items: center;
   justify-content: space-between;
   align-content: space-between;
-  position: absolute;
   z-index: +200; 
-  }
-
-  #mainNav{
-    margin-right: -175%;
   }
   
   #logo{
-    width: 250px;
+    width: 50%;
   }
   
   
@@ -189,14 +185,14 @@
       flex-direction: column;
       justify-content: center;
       z-index: +1;
-      padding-top: 37.5em;
+      padding-top: 25.5em;
     }
     
     .heroText h1 {
       font-family: 'Poppins', sans-serif;
       font-weight: 800;
       font-style: black;
-      font-size: 16rem;
+      font-size: 14rem;
       text-align: center;
         color: #f5f2f2;
       margin-bottom: 50px;
@@ -212,13 +208,19 @@
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
-    position: absolute;
     z-index: +200; 
     }
-  
-    #mainNav{
-      margin-right: -175%;
+
+    .heading1{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: space-between;
+      position: relative;
+      z-index: +200;   
     }
+    
+  
     
     #logo{
       width: 250px;
@@ -379,7 +381,7 @@
       font-style: black;
       font-size: 12rem;
       text-align: center;
-        color: white;
+        color: #636363;
       margin-bottom: 50px;
     }
     
@@ -393,21 +395,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
-    position: absolute;
-    z-index: +200;  
- 
-top:0px; 
+    z-index: +200;   
+  }
+
+  .heading1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    position: relative;
+    z-index: +200;   
   }
   
   #logo{
     width: 200px;
   }
-
-  #mainNav{
-    margin-right: -425%;
-  }
-
-
 .closeM:hover{
   cursor: default;
 }
