@@ -19,6 +19,9 @@ A portfolio site that will feature a home page and portfolio page which will dis
 
 ## Getting Started
 
+### PHP CONTACT FORM
+The php contact form for Pan is located in the php folder.
+
 ### Dependencies
 
 * HTML5
