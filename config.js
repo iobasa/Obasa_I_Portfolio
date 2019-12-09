@@ -1,9 +1,9 @@
 const config = {
     host: "localhost",
-    port: 8889,  // 3306 for windows
+    port: 3306,  // 3306 for windows
     uname: "root",
-    pword: "root", // leave blank for windows
-    dbase: "beerstats"
+    pword: "", // leave blank for windows
+    dbase: "db_portfolio"
 }
 
 module.exports = config;
