@@ -8,7 +8,7 @@
     closeB = document.querySelector(".closeM"),
     navLinks = navPanel.querySelectorAll('a'),
     message = document.querySelector('.email'),
-    email = document.querySelector('.send');
+    email = document.querySelector('.send1');
 
 
 function toggleNav(e) {
@@ -42,11 +42,13 @@ function close(event) {
   }
 
   function popMessage() {
+    console.log('should show nav dropdown open');
     message.classList.add('show-message');
   }
 
   function closeMessage(event) {
     event.preventDefault();
+    console.log('should show nav dropdown close');
     // make the lightbox close
     message.classList.remove('show-message');
   }
