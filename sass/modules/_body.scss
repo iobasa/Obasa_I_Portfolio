@@ -22,7 +22,7 @@
 }
 
 .img5{
-  height: 100vh;
+  height: 110vh;
 }
 // .top{
 //   position: absolute;
@@ -53,7 +53,7 @@ margin-top: 0px;
 position: absolute;
 float: right;
 padding-left: 30%;
-width: 80%;
+width: 70%;
 z-index: -1;
 }
 
@@ -258,8 +258,6 @@ margin-bottom: 30px;
   height: 100vh;
 }
 
-
-
 // .top{
 //   position: absolute;
 //   float: right;
@@ -440,6 +438,24 @@ margin-bottom: 30px;
 .img5{
   height: 700px;
 }
+
+#top{
+  font-size: 2rem;
+  height: 20px;
+  display: block;
+    z-index: 1;
+    color: white;
+    width: 10%;
+}
+
+#top a{
+  font-size: 1.5rem;
+    padding-top: 42%;
+    padding-left: 95%;
+    z-index: 1;
+    color: white;
+}
+
 
 // .top{
 //   position: absolute;
