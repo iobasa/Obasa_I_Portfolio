@@ -49,8 +49,9 @@
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
+  z-index: 9999;
   position: absolute;
-  top: 20px;
+  top: 40px;
   }
   
   .closeM h1 {
@@ -92,39 +93,6 @@
   
   
   
-  .email {
-    background-color: cornflowerblue;
-      width: 100%;
-  height: 80%;
-  
-  padding-top: 5%;
-  padding-bottom: 5%;
-  
-      position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: +1;
-  box-shadow: 10px 5px 5px grey;
-  
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 0.2s;
-  
-  
-  /* this should be off by default and  */
-  display: none;
-  }
-  
-  @keyframes fadeInOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-  }
 
 
 
@@ -248,73 +216,6 @@
     
     
     
-    
-    .email {
-      background-color: cornflowerblue;
-        width: 100%;
-    height: 80%;
-    
-    padding-top: 5%;
-    padding-bottom: 5%;
-    
-        position: fixed;
-      bottom: 0;
-      left: 0;
-      z-index: +1;
-    box-shadow: 10px 5px 5px grey;
-    
-    opacity: 1;
-    animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 0.2s;
-    
-    
-    /* this should be off by default and  */
-    display: none;
-    }
-    
-    @keyframes fadeInOpacity {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-    }
-    
-    .email h3{
-      -webkit-animation-duration:1s;
-      animation-duration:1s;
-      -webkit-animation-fill-mode:both;
-      animation-fill-mode:both;
-        text-decoration: none;
-        font-family: "Poppins",sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 4rem;
-      color: white;
-      opacity: 0.5;
-    }
-    
-    .email p{
-      -webkit-animation-duration:1s;
-      animation-duration:1s;
-      -webkit-animation-fill-mode:both;
-      animation-fill-mode:both;
-        text-decoration: none;
-        font-family: "Poppins",sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 3rem;
-      color: white;
-      opacity: 0.5;
-    }
-    
-    
-    
-    
-    .show-message { display: block; }
   
   
   
@@ -427,45 +328,6 @@ font-size: 2rem;
   
   #nav{
     width: 5%;
-  }
-  
-
-  
- 
-
- 
-  .email {
-    background-image: linear-gradient( white, black);
-      width: 100%;
-  height: 80%;
-  
-  padding-top: 5%;
-  padding-bottom: 5%;
-  
-      position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: +1;
-  box-shadow: 10px 5px 5px grey;
-  
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 0.2s;
-  
-  
-  /* this should be off by default and  */
-  display: none;
-  }
-  
-  @keyframes fadeInOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
   }
   
   }

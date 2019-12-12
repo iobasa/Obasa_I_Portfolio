@@ -7,6 +7,7 @@
 let mobileNav = document.querySelector("#button"),
 navPanel = document.querySelector("#burgerCon"),
 closeButton = document.querySelector(".close"),
+closeA = document.querySelectorAll("#burgerMenu a"),
 closeB = document.querySelector(".closeM"),
 navLinks = navPanel.querySelectorAll('a'),
 message = document.querySelector('.email'),
@@ -42,6 +43,12 @@ function close(event) {
     // make the lightbox close
     navPanel.classList.remove("show-mobile-nav");
   }
+
+  function closeNav() {
+    console.log('should show nav dropdown close');
+    // make the lightbox close
+    navPanel.classList.remove("show-mobile-nav");
+  }
   
   
   function popMessage() {
@@ -61,6 +68,7 @@ function close(event) {
 
 mobileNav.addEventListener('click', toggleNav);
 closeButton.addEventListener("click", close);
+closeA.forEach(button => button.addEventListener("click", closeNav));
 
 
 email.addEventListener('click', popMessage);

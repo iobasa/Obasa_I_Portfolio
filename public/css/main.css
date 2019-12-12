@@ -56,8 +56,9 @@
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
+  z-index: 9999;
   position: absolute;
-  top: 20px; }
+  top: 40px; }
 
 .closeM h1 {
   font-family: din-condensed,sans-serif;
@@ -89,30 +90,6 @@
 #nav {
   width: 5%; }
 
-.email {
-  background-color: cornflowerblue;
-  width: 100%;
-  height: 80%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: +1;
-  box-shadow: 10px 5px 5px grey;
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 0.2s;
-  /* this should be off by default and  */
-  display: none; }
-
-@keyframes fadeInOpacity {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 @media screen and (min-width: 48em) {
   .heroText {
     width: 100%;
@@ -195,60 +172,7 @@
     width: 80%; }
 
   #nav {
-    width: 5%; }
-
-  .email {
-    background-color: cornflowerblue;
-    width: 100%;
-    height: 80%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: +1;
-    box-shadow: 10px 5px 5px grey;
-    opacity: 1;
-    animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 0.2s;
-    /* this should be off by default and  */
-    display: none; }
-
-  @keyframes fadeInOpacity {
-    0% {
-      opacity: 0; }
-    100% {
-      opacity: 1; } }
-  .email h3 {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    text-decoration: none;
-    font-family: "Poppins",sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4rem;
-    color: white;
-    opacity: 0.5; }
-
-  .email p {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    text-decoration: none;
-    font-family: "Poppins",sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3rem;
-    color: white;
-    opacity: 0.5; }
-
-  .show-message {
-    display: block; } }
+    width: 5%; } }
 @media screen and (min-width: 64em) {
   .heroText {
     padding-top: 150px;
@@ -332,37 +256,15 @@
     width: 80%; }
 
   #nav {
-    width: 5%; }
-
-  .email {
-    background-image: linear-gradient(white, black);
-    width: 100%;
-    height: 80%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: +1;
-    box-shadow: 10px 5px 5px grey;
-    opacity: 1;
-    animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 0.2s;
-    /* this should be off by default and  */
-    display: none; }
-
-  @keyframes fadeInOpacity {
-    0% {
-      opacity: 0; }
-    100% {
-      opacity: 1; } } }
+    width: 5%; } }
 #button {
   background: url("../images/menu.svg") center no-repeat;
   float: right;
   margin-right: 20px;
   border: 0;
+  margin-left: -15%;
+  position: fixed;
+  z-index: +1;
   margin-top: 20px;
   width: 50px;
   height: 50px;
@@ -426,7 +328,7 @@
   font-style: normal;
   font-size: 3rem;
   color: black;
-  opacity: 0.5; }
+  opacity: 1; }
 
 .close {
   float: right;
@@ -477,6 +379,9 @@
     float: right;
     margin-right: 20px;
     border: 0;
+    margin-left: -10%;
+    position: fixed;
+    z-index: +1;
     margin-top: 20px;
     width: 70px;
     height: 70px;
@@ -540,7 +445,7 @@
     font-style: normal;
     font-size: 3rem;
     color: black;
-    opacity: 0.5; }
+    opacity: 1; }
 
   .close {
     float: right;
@@ -591,6 +496,9 @@
     margin-right: 20px;
     border: 0;
     margin-top: 20px;
+    margin-left: -6%;
+    position: fixed;
+    z-index: +1;
     width: 35px;
     height: 35px;
     transition: all 400ms ease; }
@@ -606,7 +514,7 @@
   #burgerCon {
     background-color: cornflowerblue;
     width: 100%;
-    height: 80%;
+    height: 100%;
     padding-top: 5%;
     padding-bottom: 5%;
     position: fixed;
@@ -644,7 +552,7 @@
     opacity: 0.5; }
 
   #burgerMenu {
-    padding-top: 0em;
+    padding-top: 10%;
     margin-top: 70px; }
 
   #burgerCon a {
@@ -662,14 +570,14 @@
 
   .close {
     float: right;
-    right: 20px;
+    right: 30px;
     color: black;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 2rem;
     position: absolute;
-    top: 20px; }
+    top: 20%; }
 
   .close h1 {
     font-family: din-condensed,sans-serif;
@@ -1272,31 +1180,50 @@ label {
     color: black;
     background-color: #D0E4DD; } }
 .email h3 {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  text-align: center;
+  font-family: "Raleway",sans-serif;
+  font-weight: 800;
   font-style: normal;
   font-size: 4rem;
-  color: white;
-  opacity: 0.5; }
+  color: black;
+  opacity: 1;
+  padding-top: 30%;
+  padding-bottom: 10%; }
 
 .email p {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+  text-align: center;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 3rem;
-  color: white;
-  opacity: 0.5; }
+  font-size: 2.5rem;
+  color: black;
+  opacity: 1; }
 
+.email {
+  background-color: cornflowerblue;
+  width: 100%;
+  height: 100vh;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: +1;
+  box-shadow: 10px 5px 5px grey;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.2s;
+  /* this should be off by default and  */
+  display: none; }
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .show-message {
   display: block; }
 
@@ -1481,31 +1408,50 @@ label {
   margin-bottom: 30px; }
 
 @media screen and (min-width: 48em) {
+  .email {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 93vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: +1;
+    box-shadow: 10px 5px 5px grey;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.2s;
+    /* this should be off by default and  */
+    display: none; }
+
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
   .email h3 {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    text-align: center;
+    font-family: "Raleway",sans-serif;
+    font-weight: 800;
     font-style: normal;
     font-size: 4rem;
-    color: white;
-    opacity: 0.5; }
+    color: black;
+    padding-top: 0%;
+    opacity: 1;
+    padding-bottom: 10%; }
 
   .email p {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+    text-align: center;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 3rem;
-    color: white;
-    opacity: 0.5; }
+    color: black;
+    opacity: 1; }
 
   .show-message {
     display: block; }
@@ -1644,6 +1590,30 @@ label {
   #contact {
     padding-top: 100px; } }
 @media screen and (min-width: 64em) {
+  .email {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 80%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: +1;
+    box-shadow: 10px 5px 5px grey;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.2s;
+    /* this should be off by default and  */
+    display: none; }
+
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
   .email h3 {
     text-align: center;
     font-family: "Raleway",sans-serif;
@@ -1701,7 +1671,7 @@ label {
     flex-direction: row; }
 
   .p-text {
-    width: 60%;
+    width: 50%;
     margin-top: -10px; }
 
   .about img {
@@ -1866,6 +1836,7 @@ label {
   width: 100%;
   height: 100vh;
   position: fixed;
+  z-index: +1;
   top: 0;
   background-color: black;
   display: none; }
@@ -1918,7 +1889,7 @@ label {
 .close-project {
   text-shadow: 2px 2px 4px black;
   float: right;
-  left: 95%;
+  left: 90%;
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -2020,6 +1991,7 @@ label {
     width: 100%;
     height: 100vh;
     position: fixed;
+    z-index: +1;
     top: 0;
     background-color: black;
     display: none; }
