@@ -3,19 +3,19 @@
 @import "modules/_errors";
 @import "modules/_header";
 @import "modules/_navbar";
-@import "modules/_b-contact";
 @import "modules/_contact";
 @import "modules/_body";
-@import "modules/_about";
+@import "modules/_lightbox";
 @import "modules/_portfolio";
-@import "modules/_project1";
-@import "modules/_project2";
-@import "modules/_project3";
-@import "modules/_project6";
+@import "modules/_projects";
 
 
 body{
-	font-family: 'Poppins', sans-serif;
+	background-color: $body-bg;
+}
+
+.hidden{
+	display: none;
 }
 
 

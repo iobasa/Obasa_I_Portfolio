@@ -40,7 +40,7 @@
 }
 
 .social-media a{
-  font-family: 'Raleway', sans-serif;
+  font-family: $second-font;
 font-weight: 500;
 font-style: black;
 color: white;
@@ -117,7 +117,7 @@ text-decoration: none;
 }
 
 .social-media a{
-  font-family: 'Raleway', sans-serif;
+  font-family: $second-font;
 font-weight: 500;
 font-style: black;
 color: white;
@@ -193,7 +193,7 @@ text-decoration: none;
   }
   
   .social-media a{
-    font-family: 'Raleway', sans-serif;
+    font-family: $second-font;
 font-weight: 500;
 font-style: black;
 color: white;
@@ -203,7 +203,7 @@ color: white;
   }
 
   .social-media a:hover{
-    font-family: 'Raleway', sans-serif;
+    font-family: $second-font;
 font-weight: 500;
 font-style: black;
 color: grey;

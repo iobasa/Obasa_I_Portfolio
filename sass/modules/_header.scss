@@ -9,7 +9,7 @@
   }
   
   .heroText h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: $main-font;
     font-weight: 800;
     font-style: black;
     font-size: 6rem;
@@ -125,39 +125,6 @@
     opacity: 1;
   }
   }
-  
-  .email h3{
-    -webkit-animation-duration:1s;
-    animation-duration:1s;
-    -webkit-animation-fill-mode:both;
-    animation-fill-mode:both;
-      text-decoration: none;
-      font-family: "Poppins",sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4rem;
-    color: white;
-    opacity: 0.5;
-  }
-  
-  .email p{
-    -webkit-animation-duration:1s;
-    animation-duration:1s;
-    -webkit-animation-fill-mode:both;
-    animation-fill-mode:both;
-      text-decoration: none;
-      font-family: "Poppins",sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3rem;
-    color: white;
-    opacity: 0.5;
-  }
-  
-  
-  
-  
-  .show-message { display: block; }
 
 
 
@@ -189,7 +156,7 @@
     }
     
     .heroText h1 {
-      font-family: 'Poppins', sans-serif;
+      font-family: $main-font;
       font-weight: 800;
       font-style: black;
       font-size: 14rem;
@@ -376,7 +343,7 @@
     }
     
     .heroText h1 {
-      font-family: 'Poppins', sans-serif;
+      font-family: $main-font;
       font-weight: 800;
       font-style: black;
       font-size: 12rem;
@@ -465,8 +432,10 @@ font-size: 2rem;
 
   
  
-.email {
-    background-color: cornflowerblue;
+
+ 
+  .email {
+    background-image: linear-gradient( white, black);
       width: 100%;
   height: 80%;
   
@@ -498,36 +467,6 @@ font-size: 2rem;
     opacity: 1;
   }
   }
-  
-  .email h3{
-    -webkit-animation-duration:1s;
-    animation-duration:1s;
-    -webkit-animation-fill-mode:both;
-    animation-fill-mode:both;
-      text-decoration: none;
-      font-family: "Poppins",sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4rem;
-    color: white;
-    opacity: 0.5;
-  }
-  
-  .email p{
-    -webkit-animation-duration:1s;
-    animation-duration:1s;
-    -webkit-animation-fill-mode:both;
-    animation-fill-mode:both;
-      text-decoration: none;
-      font-family: "Poppins",sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3rem;
-    color: white;
-    opacity: 0.5;
-  }
-  
-    
   
   }
   

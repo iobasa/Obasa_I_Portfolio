@@ -18,7 +18,7 @@ height:145em;
 }
 
 .ctext h3{
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
 font-weight: 500;
 font-style: black;
 font-size: 4rem;
@@ -27,7 +27,7 @@ margin-bottom: 50px;
 }
 
 .ctext p{
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
 font-weight: 500;
 font-style: black;
 font-size: 1.2rem;
@@ -59,7 +59,7 @@ input
 
 input[type=text]
 {
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
   font-weight: 400;
   font-style: normal;
   color: black;
@@ -75,7 +75,7 @@ border: 1px solid #000;
 
 input[type=email]
 {
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
@@ -90,7 +90,7 @@ border: 1px solid #000;
 
 input[type=message]
 {
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
   font-weight: 400;
   font-style: normal;
   color: black;
@@ -124,7 +124,7 @@ background-color: #35AAA6;
 
 
 .contact-main label {
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
 font-weight: 400;
 font-size: 1rem;
 font-style: normal;
@@ -133,7 +133,7 @@ color: black;
 }
 
 #Contact-main h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
 font-weight: 700;
 font-style: black;
 font-size: 1rem;
@@ -186,7 +186,7 @@ margin-right: 55%;
 }
 
 .Message label {
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
 font-weight: 400;
 font-style: normal;
 color: black;
@@ -194,7 +194,7 @@ margin-bottom: 10px;
 }
 
 .Message textarea {
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
 font-weight: 400;
 font-style: normal;
 font-size: 1rem;
@@ -218,7 +218,7 @@ margin-bottom: 50px;
 .send1
 {
 float: right;
-font-family: 'Poppins', sans-serif;
+font-family: $main-font;
 font-weight: 400;
 text-decoration: none;
 font-size: 1.3rem;
@@ -269,7 +269,7 @@ height:145em;
 }
 
 .ctext h3{
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
 font-weight: 500;
 font-style: black;
 font-size: 4rem;
@@ -278,7 +278,7 @@ margin-bottom: 50px;
 }
 
 .ctext p{
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
 font-weight: 500;
 font-style: black;
 font-size: 1.2rem;
@@ -310,7 +310,7 @@ input
 
 input[type=text]
 {
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
   font-weight: 400;
   font-style: normal;
   color: black;
@@ -326,7 +326,7 @@ border: 1px solid #000;
 
 input[type=email]
 {
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
@@ -341,7 +341,7 @@ border: 1px solid #000;
 
 input[type=message]
 {
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
   font-weight: 400;
   font-style: normal;
   color: black;
@@ -375,7 +375,7 @@ background-color: #35AAA6;
 
 
 .contact-main label {
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
 font-weight: 400;
 font-size: 1rem;
 font-style: normal;
@@ -384,7 +384,7 @@ color: black;
 }
 
 #Contact-main h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
 font-weight: 700;
 font-style: black;
 font-size: 1rem;
@@ -437,7 +437,7 @@ margin-right: 55%;
 }
 
 .Message label {
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
 font-weight: 400;
 font-style: normal;
 color: black;
@@ -445,7 +445,7 @@ margin-bottom: 10px;
 }
 
 .Message textarea {
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
 font-weight: 400;
 font-style: normal;
 font-size: 1rem;
@@ -469,7 +469,7 @@ margin-bottom: 50px;
 .send1
 {
 float: right;
-font-family: 'Poppins', sans-serif;
+font-family: $main-font;
 font-weight: 400;
 text-decoration: none;
 font-size: 1.3rem;
@@ -529,7 +529,7 @@ font-size: 1.3rem;
 }
 
 .ctext h3{
-    font-family: 'Poppins', sans-serif;
+    font-family: $main-font;
   font-weight: 500;
   font-style: black;
   font-size: 5rem;
@@ -538,7 +538,7 @@ font-size: 1.3rem;
 }
 
 .ctext p{
-    font-family: 'Poppins', sans-serif;
+    font-family: $main-font;
   font-weight: 500;
   font-style: black;
   font-size: 1.2rem;
@@ -570,7 +570,7 @@ font-size: 1.3rem;
 
 input[type=text]
 {
-    font-family: 'Poppins', sans-serif;
+    font-family: $main-font;
     font-weight: 400;
     font-style: normal;
     color: black;
@@ -586,7 +586,7 @@ border: 1px solid #000;
 
 input[type=email]
 {
-    font-family: 'Poppins', sans-serif;
+    font-family: $main-font;
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
@@ -601,7 +601,7 @@ border: 1px solid #000;
 
 input[type=message]
 {
-    font-family: 'Poppins', sans-serif;
+    font-family: $main-font;
     font-weight: 400;
     font-style: normal;
     color: black;
@@ -635,7 +635,7 @@ background-color: #35AAA6;
 
 
 .contact-main label {
-    font-family: 'Poppins', sans-serif;
+    font-family: $main-font;
 font-weight: 400;
 font-size: 1.3rem;
 font-style: normal;
@@ -644,7 +644,7 @@ color: black;
 }
 
 #Contact-main h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: $main-font;
   font-weight: 700;
   font-style: black;
   font-size: 4rem;
@@ -696,7 +696,7 @@ label{
 }
 
 .Message label {
-    font-family: 'Poppins', sans-serif;
+    font-family: $main-font;
 font-weight: 400;
 font-style: normal;
 color: black;
@@ -704,7 +704,7 @@ color: black;
 }
 
 .Message textarea {
-    font-family: 'Poppins', sans-serif;
+    font-family: $main-font;
 font-weight: 400;
 font-style: normal;
 font-size: 1rem;
@@ -729,7 +729,7 @@ padding: 10px 10px;
 .send1
 {
   float: right;
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
   font-weight: 400;
   text-decoration: none;
   font-size: 1rem;

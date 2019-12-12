@@ -6,21 +6,219 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <script src="https://kit.fontawesome.com/3cea6f351c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">  
   <link rel="shortcut icon" href="images/favicon.ico" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel='stylesheet' href='/css/main.css' />
 
-<title>docuemnt</title>
+<title>Ife Obasa</title>
 
 </head>
 
 <body>
-  <!-- passed in via handlebars -->
+  
+    <div class="showcase">
+     {{!-- <a class="top" href="#more"><img src="images/top.svg" alt="back-to-top"></a> --}}
+            <div class="img">
+              <h1 class="hidden">heading</h1>
+                <div class="heading">
+                  <h2 class="hidden">logo</h2>
+                    <div id="logo">
+                        <a href="/"><img src="images/logo-white.svg" alt=""></a>
+                    </div>
+                
+                  <h2 class="hidden">main Navigation</h2>
+                    <nav id="mainNav" ><!--beginning of mainNav-->
+                        <button id="button"></button>
+        
+           
+                         <!-- this is my dropdown nav element -->
+                         <nav id="burgerCon">
+                             <h1 class="close">X</h1>
+           
+                           <ul id="burgerMenu">
+                                 <!-- <li><a href="index.html">HOME</a></li> -->
+                                 <li><a href="/">Home</a></li>
+                                 <li><a href="/about">About</a></li>
+                                 <li><a href="/portfolio">Portfolio</a></li>
+                                 <li><a href="/contact">Contact Moi</a></li>
+                           </ul>
+           
+           
+                         </nav>
+                         <!-- end dropdown nav -->
+                       </nav>
+                    </div>
+
+                    <h1 class="hidden">About</h1>
+                     <section data-aos="fade-down" class="about" id="about">
+                       <section class="p-text" >
+                    <b>My name is <span>Ife Obasa</span>, I'm an aspiring web developer.
+                    </b>
+                    <p>I'm an Interactive Media Student at Fanshawe College.</p>
+                        <h3>I like food.</h3>
+                        <a href="#more">Learn More.</a>
+                        </section>
+
+                        <img data-aos="fade-left" src="images/hero-image.jpg" alt="">
+
+                </section>
+
+        
+              
+            </div>
+
+            <div class="img1">
+              <h1 class="hidden">Navigation</h1>
+              <div data-aos="fade-down"  id="more" class="container">
+  <nav id="nav">
+    <ul>
+      <li>
+        <a  href="#skills">
+        Skillset</a>
+         <section data-aos="fade-up" class="p-text">
+                    <span>My Skillset</span>
+                        <b>What I can do.</b>
+                </section>
+      </li>
+      <li>
+        <a id="videoImg" href="#more" >DEMO REEL</a>
+        <section data-aos="fade-up" class="p-text">
+                    <span>A video Showcase</span>
+                        <b>A video presentation designed to showcase my projects</b>
+                </section>
+      </li>
+       <li>
+        <a  href="#work">My works</a>
+        <section data-aos="fade-up" class="p-text">
+                    <span>My selected Works</span>
+                        <b>Check it out.</b>
+                </section>
+      </li>
+      <li>
+        <a  href="#contact">Contact</a>
+       <section data-aos="fade-up" class="p-text">
+                    <span>Talk to me!!!</span>
+                        <b>please.</b>
+                </section>
+      </li>
+    </ul>
+  </nav>
+
+</div>
+
+  <h2 class="hidden">Lightbox</h2>
+<section class="lightbox">
+        <h1 class="close-lightbox">X</h1>
+
+      <video class="videol" src="video/demo-reel.mp4" type="video/mp4" controls=autoplay></video>
+
+      </section>
+                
+            </div>
+
+        <h1 class="hidden">Skillset</h1>
+            <div id="skills" class="img2">
+                 <section  data-aos="fade-down" class="p-text">
+                    <b>My Skillset</b>
+                        <p>Languages</p>
+                        <p>CSS3, HTML, JAVASCRIPT, NODE, EXPRESS</p>
+                        <p>Skills</p>
+                        <p>Web development, Web design, 3D design</p>
+                </section>
+
+            </div>
+
+        <h1 class="hidden">Work</h1>
+            <div id="work"  class="img3">
+                    
+
+   <!-- passed in via handlebars -->
   {{{body}}}
   <!-- end dynamic stuff -->
+
+
+          
+            </div>
+
+
+          <h1 class="hidden">My Work</h1>
+            <div id="contact" class="img5">
+
+                    <section data-aos="fade-down" id="text" class="text">
+                            <h3>Contact Moi</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor consequuntur explicabo ipsum dolores sed adipisci, quis nostrum voluptatem iure libero. Consequuntur sequi magni consequatur non aliquam expedita debitis hic temporibus.</p>
+                        </section>
+
+
+                        <div data-aos="fade-down" class="contact-main"><!--Contact textbox area-->
+                        <!-- Forms-->
+                        <form>
+            
+                        <div class="c-name">
+                         <input type="text" name="company" placeholder="Name">
+                        </div>
+                        <br>
+            
+                        <div class="c-subject">
+                          <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                        
+            
+                        <br>
+            
+                      <div class="c-email">
+                        <input type="email" name="usermail" required placeholder="E-mail">
+                      </div>
+                      <br>
+            
+            
+                          <div class="Message">
+                          <textarea name="message" id="user-message" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <br>
+
+                        <input type="submit" value="Send!" class="send1">
+            
+                        </form>
+                        </div>
+            </div>
+    
+        </div>
+
+        <h2 class="hidden">email</h2>
+        <div class="email">
+            <h1 class="closeM">X</h1>
+            <h3  data-aos="fade-left">Heeeyy!!</h3>
+            <p data-aos="fade-left">Thanks for contacting moi, <br>I'll get back to you as soon as I finish bingewatching F.R.I.E.N.D.S
+            </p>
+        </div>
+        
+          <h1 class="hidden">footer</h1>
+            <div class="footer">
+                    {{!-- <div id="f-logo">
+                            <img src="images/logo-white.svg" alt="">
+                        </div> --}}
+                
+                 <h2 class="hidden">Social Media</h2>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/iffybaas/">instagram</a>
+
+                    <a href="https://github.com/iobasa">github</a>
+            
+                    <a href="https://www.linkedin.com/in/ife-obasa-567593191/">linkedIn</a>
+                </div>
+        
+                <h2 class="hidden">Copyright</h2>
+                <section id="copyright">
+                    <p>&copy; copyright 2019 Ife Obasa</p>
+                </section>
+        
+            </div>
+  
+
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/fade.js"></script>
   <script src="js/mail.js"></script>
