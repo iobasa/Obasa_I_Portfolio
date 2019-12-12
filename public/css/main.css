@@ -23,7 +23,7 @@
   padding-top: 10.5em; }
 
 .heroText h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-style: black;
   font-size: 6rem;
@@ -113,35 +113,6 @@
     opacity: 0; }
   100% {
     opacity: 1; } }
-.email h3 {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  text-decoration: none;
-  font-family: "Poppins",sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 4rem;
-  color: white;
-  opacity: 0.5; }
-
-.email p {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  text-decoration: none;
-  font-family: "Poppins",sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 3rem;
-  color: white;
-  opacity: 0.5; }
-
-.show-message {
-  display: block; }
-
 @media screen and (min-width: 48em) {
   .heroText {
     width: 100%;
@@ -153,7 +124,7 @@
     padding-top: 25.5em; }
 
   .heroText h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 800;
     font-style: black;
     font-size: 14rem;
@@ -290,7 +261,7 @@
     z-index: +1; }
 
   .heroText h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 800;
     font-style: black;
     font-size: 12rem;
@@ -364,7 +335,7 @@
     width: 5%; }
 
   .email {
-    background-color: cornflowerblue;
+    background-image: linear-gradient(white, black);
     width: 100%;
     height: 80%;
     padding-top: 5%;
@@ -386,32 +357,7 @@
     0% {
       opacity: 0; }
     100% {
-      opacity: 1; } }
-  .email h3 {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    text-decoration: none;
-    font-family: "Poppins",sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4rem;
-    color: white;
-    opacity: 0.5; }
-
-  .email p {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    text-decoration: none;
-    font-family: "Poppins",sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3rem;
-    color: white;
-    opacity: 0.5; } }
+      opacity: 1; } } }
 #button {
   background: url("../images/menu.svg") center no-repeat;
   float: right;
@@ -475,7 +421,7 @@
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   text-decoration: none;
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 3rem;
@@ -486,7 +432,7 @@
   float: right;
   right: 20px;
   color: black;
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 4rem;
@@ -589,7 +535,7 @@
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     text-decoration: none;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 3rem;
@@ -600,7 +546,7 @@
     float: right;
     right: 20px;
     color: black;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 4rem;
@@ -707,7 +653,7 @@
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     text-decoration: none;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 4rem;
@@ -718,7 +664,7 @@
     float: right;
     right: 20px;
     color: black;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 2rem;
@@ -764,207 +710,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px; }
-
-.read-more {
-  padding: 16px 10px;
-  color: white;
-  background-color: black;
-  text-decoration: none;
-  margin-top: 18px; }
-
-.read-more:hover {
-  padding: 16px 10px;
-  color: black;
-  background-color: white;
-  text-decoration: none; }
-
-.contact-img {
-  width: 100%;
-  background-color: grey; }
-
-.border {
-  margin-top: 100px;
-  width: 60px;
-  height: 2px;
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: solid 2px #35AAA6; }
-
-.send {
-  display: flex;
-  justify-content: center;
-  margin-right: -330px;
-  margin-top: 20px;
-  margin-bottom: 50px; }
-
-.send {
-  float: right;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  text-decoration: none;
-  font-size: 2rem;
-  color: white;
-  background-color: #35AAA6;
-  padding-right: 1rem;
-  padding: .2rem 4.5rem;
-  width: 40%; }
-
-.send:hover {
-  color: #D0E4DD;
-  background-color: black; }
-
-@media screen and (min-width: 64em) {
-  .c-img {
-    background-image: url("../images/contact-image.jpg");
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px; }
-
-  .show-message {
-    display: block; }
-
-  .read-more {
-    padding: 12px 8px;
-    color: white;
-    background-color: black;
-    text-decoration: none;
-    margin-top: 8px; }
-
-  .read-more:hover {
-    padding: 12px 8px;
-    color: black;
-    background-color: white;
-    text-decoration: none;
-    margin-top: 8px; }
-
-  input {
-    width: 150%; }
-
-  input[type=text] {
-    height: 10%;
-    padding: 20px 10px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none; }
-
-  input[type=email] {
-    padding: 20px 30px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none; }
-
-  input[type=message] {
-    width: 400%;
-    color: black;
-    padding: 40px 30px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none; }
-
-  .hero-head1 {
-    margin-bottom: 130px;
-    margin-top: 130px;
-    display: flex;
-    flex-direction: column; }
-
-  .hero-head1 h1 {
-    width: 40%;
-    float: left;
-    font-family: din-condensed,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 10rem;
-    color: white;
-    background-color: #35AAA6; }
-
-  .contact label {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
-    font-style: normal;
-    color: #35AAA6; }
-
-  #Contact h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-style: black;
-    font-size: 4rem;
-    text-align: center;
-    margin-top: 160px; }
-
-  .contact {
-    padding-top: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 30%; }
-
-  .contact p {
-    padding-top: 40px; }
-
-  .firstName {
-    margin-right: 80px; }
-
-  .lastName {
-    margin-right: 80px; }
-
-  .E-mail {
-    margin-right: 80px; }
-
-  .message {
-    margin-right: 95px;
-    border: 3px black; }
-
-  .message label {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #35AAA6;
-    margin-bottom: 10px;
-    border: 3px black; }
-
-  .message textarea {
-    margin-top: 10px;
-    width: 155%;
-    height: 150px; }
-
-  .send {
-    display: flex;
-    justify-content: center;
-    margin-right: -125px;
-    margin-top: 20px;
-    margin-bottom: 50px; }
-
-  .send {
-    float: right;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    text-decoration: none;
-    font-size: 2rem;
-    color: white;
-    background-color: #35AAA6;
-    padding-right: 1rem;
-    padding: .2rem 4.5rem;
-    width: 40%; }
-
-  .send:hover {
-    color: #D0E4DD;
-    background-color: black; } }
-.c-img {
-  background-image: url("../images/contact-image.jpg");
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 145em; }
 
 .ctext {
@@ -973,7 +718,7 @@
   padding-top: 100px; }
 
 .ctext h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: black;
   font-size: 4rem;
@@ -981,7 +726,7 @@
   margin-bottom: 50px; }
 
 .ctext p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: black;
   font-size: 1.2rem;
@@ -1006,7 +751,7 @@ input {
   width: 350%; }
 
 input[type=text] {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: black;
@@ -1020,7 +765,7 @@ input[type=text] {
   border-radius: 0; }
 
 input[type=email] {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
@@ -1033,7 +778,7 @@ input[type=email] {
   border-radius: 0; }
 
 input[type=message] {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: black;
@@ -1063,14 +808,14 @@ input[type=message] {
   background-color: #35AAA6; }
 
 .contact-main label {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   font-style: normal;
   color: black; }
 
 #Contact-main h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: black;
   font-size: 1rem;
@@ -1106,14 +851,14 @@ label {
   margin-right: 55%; }
 
 .Message label {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: black;
   margin-bottom: 10px; }
 
 .Message textarea {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
@@ -1133,7 +878,7 @@ label {
 
 .send1 {
   float: right;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   text-decoration: none;
   font-size: 1.3rem;
@@ -1163,7 +908,7 @@ label {
     padding-top: 200px; }
 
   .ctext h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: black;
     font-size: 4rem;
@@ -1171,7 +916,7 @@ label {
     margin-bottom: 50px; }
 
   .ctext p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: black;
     font-size: 1.2rem;
@@ -1196,7 +941,7 @@ label {
     width: 400%; }
 
   input[type=text] {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: black;
@@ -1210,7 +955,7 @@ label {
     border-radius: 0; }
 
   input[type=email] {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
@@ -1223,7 +968,7 @@ label {
     border-radius: 0; }
 
   input[type=message] {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: black;
@@ -1253,14 +998,14 @@ label {
     background-color: #35AAA6; }
 
   .contact-main label {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 1rem;
     font-style: normal;
     color: black; }
 
   #Contact-main h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: black;
     font-size: 1rem;
@@ -1296,14 +1041,14 @@ label {
     margin-right: 55%; }
 
   .Message label {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: black;
     margin-bottom: 10px; }
 
   .Message textarea {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
@@ -1323,7 +1068,7 @@ label {
 
   .send1 {
     float: right;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     text-decoration: none;
     font-size: 1.3rem;
@@ -1353,7 +1098,7 @@ label {
     margin-left: 50px; }
 
   .ctext h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: black;
     font-size: 5rem;
@@ -1361,7 +1106,7 @@ label {
     margin-bottom: 50px; }
 
   .ctext p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: black;
     font-size: 1.2rem;
@@ -1386,7 +1131,7 @@ label {
     width: 150%; }
 
   input[type=text] {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: black;
@@ -1400,7 +1145,7 @@ label {
     border-radius: 0; }
 
   input[type=email] {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
@@ -1413,7 +1158,7 @@ label {
     border-radius: 0; }
 
   input[type=message] {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: black;
@@ -1443,14 +1188,14 @@ label {
     background-color: #35AAA6; }
 
   .contact-main label {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 1.3rem;
     font-style: normal;
     color: black; }
 
   #Contact-main h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: black;
     font-size: 4rem;
@@ -1485,14 +1230,14 @@ label {
     margin-right: 95px; }
 
   .Message label {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: black;
     margin-bottom: 10px; }
 
   .Message textarea {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
@@ -1513,7 +1258,7 @@ label {
 
   .send1 {
     float: right;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     text-decoration: none;
     font-size: 1rem;
@@ -1526,6 +1271,35 @@ label {
   .send1:hover {
     color: black;
     background-color: #D0E4DD; } }
+.email h3 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  color: white;
+  opacity: 0.5; }
+
+.email p {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  color: white;
+  opacity: 0.5; }
+
+.show-message {
+  display: block; }
+
 .showcase {
   width: 100%;
   background-color: black; }
@@ -1707,6 +1481,35 @@ label {
   margin-bottom: 30px; }
 
 @media screen and (min-width: 48em) {
+  .email h3 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    color: white;
+    opacity: 0.5; }
+
+  .email p {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: white;
+    opacity: 0.5; }
+
+  .show-message {
+    display: block; }
+
   .showcase {
     width: 100%;
     background-color: black; }
@@ -1740,7 +1543,7 @@ label {
     position: absolute;
     float: right;
     padding-left: 30%;
-    width: 80%;
+    width: 70%;
     z-index: -1; }
 
   .p-text h3 {
@@ -1841,6 +1644,29 @@ label {
   #contact {
     padding-top: 100px; } }
 @media screen and (min-width: 64em) {
+  .email h3 {
+    text-align: center;
+    font-family: "Raleway",sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 4rem;
+    color: black;
+    opacity: 1;
+    padding-bottom: 10%; }
+
+  .email p {
+    text-align: center;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: black;
+    opacity: 1; }
+
+  .show-message {
+    display: block; }
+
   .showcase {
     width: 100%;
     background-color: black; }
@@ -2030,30 +1856,228 @@ label {
 
   #contact {
     padding-top: 0px; } }
-.about {
-  background-image: url("../images/ife.png");
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 700px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
+.lightbox video {
+  width: 95%;
+  margin-top: 50%;
+  display: block !important; }
 
-.me-text {
-  margin-top: 100px;
-  width: 45%;
+/* add styles here for lightbox and video */
+.lightbox {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  display: none; }
+
+.show-lightbox {
+  display: block; }
+
+.close-lightbox {
+  float: right;
+  left: 85%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  position: absolute;
+  top: 20px; }
+
+.close-lightbox:hover {
+  cursor: default; }
+
+.videol {
+  width: 85%;
+  margin-left: 2%;
+  display: block; }
+
+.videol video {
+  width: 85%;
   margin-left: 5%;
-  line-height: 27px; }
+  margin-top: 20%;
+  display: block; }
 
-.me-text h2 {
-  font-size: 3.5rem;
-  margin-bottom: 40px; }
+.video {
+  display: none; }
 
+/* add styles here for lightbox and video */
+.project {
+  width: 100%;
+  height: 105vh;
+  position: fixed !important;
+  overflow: scroll;
+  top: 0;
+  background-color: black;
+  display: none;
+  z-index: +1; }
+
+.show-project {
+  display: block; }
+
+.close-project {
+  text-shadow: 2px 2px 4px black;
+  float: right;
+  left: 95%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  position: absolute;
+  top: 20px; }
+
+.close-project:hover {
+  cursor: default; }
+
+@media screen and (min-width: 48em) {
+  .lightbox video {
+    width: 85%;
+    margin-top: 20%;
+    display: block !important; }
+
+  /* add styles here for lightbox and video */
+  .lightbox {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    display: none; }
+
+  .show-lightbox {
+    display: block; }
+
+  .close-lightbox {
+    float: right;
+    left: 85%;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    position: absolute;
+    top: 20px; }
+
+  .close-lightbox:hover {
+    cursor: default; }
+
+  .videol {
+    width: 85%;
+    margin-left: 2%;
+    display: block; }
+
+  .videol video {
+    width: 85%;
+    margin-left: 5%;
+    margin-top: 20%;
+    display: block; }
+
+  .video {
+    display: none; }
+
+  /* add styles here for lightbox and video */
+  .project {
+    width: 100%;
+    height: 100vh;
+    position: fixed !important;
+    overflow: scroll;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    top: 0;
+    background-color: black;
+    display: none;
+    z-index: +1; }
+
+  .show-project {
+    display: block; }
+
+  .close-project {
+    text-shadow: 2px 2px 4px black;
+    float: right;
+    left: 95%;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    position: absolute;
+    top: 20px; }
+
+  .close-project:hover {
+    cursor: default; } }
+@media screen and (min-width: 64em) {
+  .lightbox video {
+    width: 85%;
+    margin: 0 auto;
+    display: block !important; }
+
+  /* add styles here for lightbox and video */
+  .lightbox {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    display: none; }
+
+  .show-lightbox {
+    display: block; }
+
+  .close-lightbox {
+    float: right;
+    left: 95%;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    position: absolute;
+    top: 20px; }
+
+  .close-lightbox:hover {
+    cursor: default; }
+
+  .videol {
+    width: 85%;
+    margin: 5% auto 10% auto;
+    display: block; }
+
+  .video {
+    display: none; }
+
+  /* add styles here for lightbox and video */
+  .project {
+    width: 100%;
+    height: 100vh;
+    position: fixed !important;
+    overflow: scroll;
+    top: 0;
+    background-color: black;
+    display: none;
+    z-index: +1; }
+
+  .show-project {
+    display: block; }
+
+  .close-project {
+    text-shadow: 2px 2px 4px black;
+    float: right;
+    left: 95%;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    z-index: 9999;
+    position: absolute;
+    top: 20px; }
+
+  .close-project:hover {
+    cursor: default; } }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: #fff; }
@@ -2079,7 +2103,7 @@ body {
   color: white; }
 
 #portf-name h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: black;
   font-size: 10rem;
@@ -2088,7 +2112,7 @@ body {
   position: fixed; }
 
 .port-info p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: black;
   font-size: 1.2rem;
@@ -2131,11 +2155,11 @@ body {
   left: 100%;
   z-index: 0; }
 
-#work {
+#project {
   position: relative;
   width: 100%; }
 
-#work img {
+#project img {
   position: absolute;
   top: 0;
   left: 0;
@@ -2143,7 +2167,7 @@ body {
   height: 700px;
   z-index: +30; }
 
-#work li img {
+#project li img {
   display: none;
   margin-top: 100px;
   position: absolute;
@@ -2154,7 +2178,7 @@ body {
   left: 100%;
   z-index: 0; }
 
-#work li section {
+#project li section {
   margin-top: -10px;
   position: absolute;
   top: 30;
@@ -2243,7 +2267,7 @@ body {
 
 @media screen and (min-width: 64em) {
   body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     background-color: #fff; }
@@ -2269,7 +2293,7 @@ body {
     color: white; }
 
   #portf-name h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: black;
     font-size: 10rem;
@@ -2278,7 +2302,7 @@ body {
     position: fixed; }
 
   .port-info p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: black;
     font-size: 1.2rem;
@@ -2321,13 +2345,13 @@ body {
     left: 100%;
     z-index: 0; }
 
-  #work {
+  #project {
     position: relative;
     overflow: hidden;
     width: 100%;
     height: 700px; }
 
-  #work img {
+  #project img {
     position: absolute;
     top: 0;
     left: 0;
@@ -2335,7 +2359,7 @@ body {
     height: 700px;
     z-index: +30; }
 
-  #work li img {
+  #project li img {
     display: block;
     margin-top: 100px;
     position: absolute;
@@ -2346,7 +2370,7 @@ body {
     left: 100%;
     z-index: 0; }
 
-  #work li section {
+  #project li section {
     margin-top: -10px;
     position: absolute;
     top: 30;
@@ -2443,12 +2467,12 @@ body {
   background-color: #fff;
   color: black; }
 
-.hero-p {
-  background-image: url("../images/rose_glasses.jpg");
-  /* Create the parallax scrolling effect */
+.hero-p img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 0%;
+  width: 100%;
   margin-top: -27%;
   height: 700px; }
 
@@ -2535,11 +2559,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  width: 50%; }
+  width: 50%;
+  padding-bottom: 10%; }
 
 .pro-desc1 p {
   font-size: 1.2rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 25px; }
 
 .pro-desc1 h3 {
@@ -2554,11 +2579,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  width: 50%; }
+  width: 50%;
+  padding-bottom: 10%; }
 
 .pro-desc p {
   font-size: 1rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 25px; }
 
 .pro-desc h3 {
@@ -2572,6 +2598,8 @@ body {
   margin-top: -500px; }
 
 #mockup {
+  display: flex;
+  flex-direction: column;
   margin-left: 0%;
   width: 90%;
   position: relative;
@@ -2580,6 +2608,12 @@ body {
 #mockup img {
   margin-left: 0%;
   width: 110%; }
+
+#mockup video {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+  width: 100%; }
 
 .plan {
   padding-top: 100px;
@@ -2606,14 +2640,15 @@ body {
 
   .body1 {
     background-color: #fff;
-    color: black; }
+    color: black;
+    width: 100%; }
 
-  .hero-p {
-    background-image: url("../images/rose_glasses.jpg");
-    /* Create the parallax scrolling effect */
+  .hero-p img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 0%;
+    width: 100%;
     height: 700px; }
 
   #ana-logo {
@@ -2699,11 +2734,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 50%; }
+    width: 50%;
+    margin-bottom: 10%; }
 
   .pro-desc1 p {
     font-size: 1.2rem;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     line-height: 25px; }
 
   .pro-desc1 h3 {
@@ -2718,11 +2754,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 50%; }
+    width: 50%;
+    padding-bottom: 10%; }
 
   .pro-desc p {
     font-size: 1rem;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     line-height: 25px; }
 
   .pro-desc h3 {
@@ -2771,12 +2808,13 @@ body {
     background-color: #fff;
     color: black; }
 
-  .hero-p {
-    background-image: url("../images/rose_glasses.jpg");
-    /* Create the parallax scrolling effect */
+  .hero-p img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 0%;
+    z-index: +1;
+    width: 100%;
     height: 700px; }
 
   #ana-logo {
@@ -2787,8 +2825,10 @@ body {
     margin-left: 10%; }
 
   .hero-p h2 {
-    padding-left: 5%;
+    z-index: +1;
+    position: absolute;
     padding-top: 10%;
+    padding-left: 5%;
     color: white;
     font-weight: 700;
     margin-top: 0px;
@@ -2796,12 +2836,14 @@ body {
     text-align: left; }
 
   .hero-p p {
-    padding-top: 10%;
+    z-index: +1;
+    position: absolute;
+    padding-top: 15%;
     font-family: "Raleway";
     color: white;
     font-weight: 700;
     margin-top: 0px;
-    font-size: 10rem;
+    font-size: 7.5rem;
     text-align: center; }
 
   .hero-p span {
@@ -2865,7 +2907,7 @@ body {
 
   .pro-desc1 p {
     font-size: 1.2rem;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     line-height: 25px; }
 
   .pro-desc1 h3 {
@@ -2880,11 +2922,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 50%; }
+    width: 50%;
+    padding-bottom: 10%; }
 
   .pro-desc p {
     font-size: 1rem;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     line-height: 25px; }
 
   .pro-desc h3 {
@@ -2907,6 +2950,12 @@ body {
     margin-left: 0%;
     width: 110%; }
 
+  #mockup video {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    width: 100%; }
+
   .plan {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -2922,562 +2971,11 @@ body {
   .plan img {
     box-shadow: 10px 10px 5px 5px grey;
     width: 40%; } }
-.hero-p2 {
-  background-image: url("../images/musicmixer.jpg");
-  /* Create the parallax scrolling effect */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -105px;
-  height: 700px; }
-
-.hero-p2 h2 {
-  padding-left: 5%;
-  padding-top: 40%;
-  color: white;
-  font-weight: 700;
-  margin-top: 0px;
-  font-size: 2.5rem;
-  text-align: left; }
-
-.hero-p2 p {
-  padding-top: 10%;
-  font-family: "Raleway";
-  color: white;
-  font-weight: 700;
-  margin-top: 0px;
-  font-size: 4rem;
-  text-align: center; }
-
-.hero-p2 span {
-  color: white;
-  font-weight: 700;
-  margin-top: 0px;
-  font-size: 2.5rem;
-  text-align: center; }
-
-@media screen and (min-width: 48em) {
-  .hero-p2 {
-    background-image: url("../images/musicmixer.jpg");
-    /* Create the parallax scrolling effect */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -20%;
-    height: 700px; }
-
-  .hero-p2 h2 {
-    padding-left: 5%;
-    padding-top: 20%;
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 3rem;
-    text-align: left; }
-
-  .hero-p2 p {
-    padding-top: 10%;
-    font-family: "Raleway";
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 6.5rem;
-    text-align: center; }
-
-  .hero-p2 span {
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 2.5rem;
-    text-align: center; } }
-@media screen and (min-width: 64em) {
-  .hero-p2 {
-    background-image: url("../images/musicmixer.jpg");
-    /* Create the parallax scrolling effect */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -105px;
-    height: 700px; }
-
-  .hero-p2 h2 {
-    padding-left: 5%;
-    padding-top: 10%;
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 3rem;
-    text-align: left; }
-
-  .hero-p2 p {
-    padding-top: 10%;
-    font-family: "Raleway";
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 6.5rem;
-    text-align: center; }
-
-  .hero-p2 span {
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 2.5rem;
-    text-align: center; } }
-.arrow {
-  margin-top: 10%;
-  padding-bottom: 5%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly; }
-
-.arrow a {
-  width: 10%; }
-
-.arrow img {
-  width: 50%; }
-
-.desc1 {
-  margin-top: 8%;
-  margin-left: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 50%;
-  margin-bottom: 10%; }
-
-.desc1 p {
-  font-size: 1.2rem;
-  font-family: 'Raleway', sans-serif;
-  line-height: 25px; }
-
-.desc1 h3 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 20px; }
-
-.pro-desc2 {
-  margin-top: 8%;
-  margin-left: 15%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  width: 80%; }
-
-.pro-desc2 p {
-  font-size: 1.2rem;
-  font-family: 'Raleway', sans-serif;
-  line-height: 25px; }
-
-.pro-desc2 h3 {
-  font-size: 4rem;
-  font-weight: 700;
-  margin-bottom: 20px; }
-
-.hero-p3 {
-  background-image: url("../images/wood.jpg");
-  /* Create the parallax scrolling effect */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -26%;
-  height: 700px; }
-
-.hero-p3 h2 {
-  padding-left: 5%;
-  padding-top: 30%;
-  color: white;
-  font-weight: 700;
-  margin-top: 0px;
-  font-size: 2rem;
-  text-align: left; }
-
-.hero-p3 p {
-  padding-top: 10%;
-  font-family: "Raleway";
-  color: white;
-  font-weight: 700;
-  margin-top: 0px;
-  font-size: 4.5rem;
-  text-align: center; }
-
-.hero-p3 span {
-  color: white;
-  font-weight: 700;
-  margin-top: 0px;
-  font-size: 2.5rem;
-  text-align: center; }
-
-.int-video {
-  display: flex;
-  justify-content: center;
-  margin-left: 5%;
-  width: 100%; }
-
-.info {
-  display: flex;
-  flex-direction: row; }
-
-.info img {
-  margin-top: 150px;
-  width: 100%; }
-
-.desc {
-  display: none; }
-
-#description {
-  display: none;
-  margin-top: 100px;
-  padding-bottom: 50px;
-  height: 70%;
-  overflow-y: auto;
-  overflow: hidden;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  /* required */
-  width: 50%;
-  overflow: auto; }
-
-@media screen and (min-width: 48em) {
-  .arrow {
-    margin-top: 10%;
-    padding-bottom: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
-
-  .arrow a {
-    width: 10%; }
-
-  .arrow img {
-    width: 50%; }
-
-  .desc1 {
-    margin-top: 8%;
-    margin-left: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 50%;
-    margin-bottom: 10%; }
-
-  .desc1 p {
-    font-size: 1.2rem;
-    font-family: 'Raleway', sans-serif;
-    line-height: 25px; }
-
-  .desc1 h3 {
-    font-size: 4.5rem;
-    font-weight: 700;
-    margin-bottom: 20px; }
-
-  .pro-desc2 {
-    margin-top: 8%;
-    margin-left: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 80%; }
-
-  .pro-desc2 p {
-    font-size: 1.2rem;
-    font-family: 'Raleway', sans-serif;
-    line-height: 25px; }
-
-  .pro-desc2 h3 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px; }
-
-  .hero-p3 {
-    background-image: url("../images/wood.jpg");
-    /* Create the parallax scrolling effect */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px; }
-
-  .hero-p3 h2 {
-    padding-left: 5%;
-    padding-top: 20%;
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 3rem;
-    text-align: left; }
-
-  .hero-p3 p {
-    padding-top: 10%;
-    font-family: "Raleway";
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 6rem;
-    text-align: center; }
-
-  .hero-p3 span {
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 2.5rem;
-    text-align: center; }
-
-  .int-video {
-    display: flex;
-    justify-content: center;
-    margin-left: 5%;
-    width: 100%;
-    margin-bottom: 10%; }
-
-  .info {
-    display: flex;
-    flex-direction: row; }
-
-  .info img {
-    display: block;
-    margin-top: 150px;
-    width: 40%; }
-
-  .desc {
-    display: none; }
-
-  #description {
-    display: block;
-    margin-top: 100px;
-    padding-bottom: 50px;
-    height: 70%;
-    overflow-y: auto;
-    overflow: hidden;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    /* required */
-    width: 50%;
-    overflow: auto; } }
-@media screen and (min-width: 64em) {
-  .arrow {
-    margin-top: 10%;
-    padding-bottom: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
-
-  .arrow a {
-    width: 10%; }
-
-  .arrow img {
-    width: 50%; }
-
-  .desc1 {
-    margin-top: 8%;
-    margin-left: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 50%;
-    margin-bottom: 10%; }
-
-  .desc1 p {
-    font-size: 1.2rem;
-    font-family: 'Raleway', sans-serif;
-    line-height: 25px; }
-
-  .desc1 h3 {
-    font-size: 4.5rem;
-    font-weight: 700;
-    margin-bottom: 20px; }
-
-  .pro-desc2 {
-    margin-top: 8%;
-    margin-left: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 80%; }
-
-  .pro-desc2 p {
-    font-size: 1.2rem;
-    font-family: 'Raleway', sans-serif;
-    line-height: 25px; }
-
-  .pro-desc2 h3 {
-    font-size: 4.5rem;
-    font-weight: 700;
-    margin-bottom: 20px; }
-
-  .hero-p3 {
-    background-image: url("../images/wood.jpg");
-    /* Create the parallax scrolling effect */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px; }
-
-  .hero-p3 h2 {
-    padding-left: 5%;
-    padding-top: 10%;
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 3rem;
-    text-align: left; }
-
-  .hero-p3 p {
-    padding-top: 10%;
-    font-family: "Raleway";
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 7rem;
-    text-align: center; }
-
-  .hero-p3 span {
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 2.5rem;
-    text-align: center; }
-
-  .pro-des p {
-    font-size: 1.2rem;
-    font-family: 'Raleway', sans-serif;
-    line-height: 25px; }
-
-  .pro-des h3 {
-    font-size: 4.5rem;
-    font-weight: 700;
-    margin-bottom: 20px; }
-
-  .int-video {
-    display: flex;
-    justify-content: center;
-    margin-left: 5%;
-    width: 100%; }
-
-  #description {
-    margin-top: 60px;
-    padding-bottom: 50px;
-    height: 70%;
-    overflow-y: auto;
-    overflow: hidden;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    /* required */
-    width: 60%;
-    overflow: auto;
-    display: block; }
-
-  .info img {
-    width: 50%; } }
-.hero-p6 {
-  background-image: url("../images/commercial.jpg");
-  /* Create the parallax scrolling effect */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 700px; }
-
-.hero-p6 h2 {
-  padding-left: 5%;
-  padding-top: 17%;
-  color: white;
-  font-weight: 700;
-  margin-top: 0px;
-  font-size: 3rem;
-  text-align: left; }
-
-.hero-p6 p {
-  padding-top: 10%;
-  font-family: "Raleway";
-  color: white;
-  font-weight: 700;
-  margin-top: 0px;
-  font-size: 6.5rem;
-  text-align: center; }
-
-.hero-p6 span {
-  color: white;
-  font-weight: 700;
-  margin-top: 0px;
-  font-size: 2.5rem;
-  text-align: center; }
-
-@media screen and (min-width: 48em) {
-  .hero-p6 {
-    background-image: url("../images/commercial.jpg");
-    /* Create the parallax scrolling effect */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px; }
-
-  .hero-p6 h2 {
-    padding-left: 5%;
-    padding-top: 20%;
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 3rem;
-    text-align: left; }
-
-  .hero-p6 p {
-    padding-top: 10%;
-    font-family: "Raleway";
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 6.5rem;
-    text-align: center; }
-
-  .hero-p6 span {
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 2.5rem;
-    text-align: center; } }
-@media screen and (min-width: 64em) {
-  .hero-p6 {
-    background-image: url("../images/commercial.jpg");
-    /* Create the parallax scrolling effect */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px; }
-
-  .hero-p6 h2 {
-    padding-left: 5%;
-    padding-top: 10%;
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 3rem;
-    text-align: left; }
-
-  .hero-p6 p {
-    padding-top: 10%;
-    font-family: "Raleway";
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 6.5rem;
-    text-align: center; }
-
-  .hero-p6 span {
-    color: white;
-    font-weight: 700;
-    margin-top: 0px;
-    font-size: 2.5rem;
-    text-align: center; } }
 body {
-  font-family: 'Poppins', sans-serif; }
+  background-color: black; }
+
+.hidden {
+  display: none; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -3568,7 +3066,7 @@ body {
   justify-content: right; }
 
 .social-media a {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-style: black;
   color: white;
@@ -3628,7 +3126,7 @@ body {
     justify-content: right; }
 
   .social-media a {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-style: black;
     color: white;
@@ -3685,7 +3183,7 @@ body {
     justify-content: right; }
 
   .social-media a {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-style: black;
     color: white;
@@ -3694,7 +3192,7 @@ body {
     text-decoration: none; }
 
   .social-media a:hover {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-style: black;
     color: grey;

@@ -6,18 +6,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
-var contact = require('./routes/contact');
-var about = require('./routes/about');
-var portfolio = require('./routes/portfolio');
-var project1 = require('./routes/project1');
-var project2 = require('./routes/project2');
-var project3 = require('./routes/project3');
-var project4 = require('./routes/project4');
-var project5 = require('./routes/project5');
-var project6 = require('./routes/project6');
 
 var app = express();
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -32,16 +24,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
-app.use('/contact', contact);
-app.use('/about', about);
-app.use('/portfolio', portfolio);
-app.use('/project1', project1);
-app.use('/project2', project2);
-app.use('/project3', project3);
-app.use('/project4', project4);
-app.use('/project5', project5);
-app.use('/project6', project6);
 
 
 // catch 404 and forward to error handler

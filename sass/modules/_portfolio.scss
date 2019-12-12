@@ -1,5 +1,5 @@
 body{
-	font-family: 'Poppins', sans-serif;
+	font-family: $main-font;
 font-weight: 400;
 font-style: normal;
 background-color: #fff;
@@ -33,7 +33,7 @@ background-color: #fff;
 
 
 #portf-name h3{
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
 font-weight: 500;
 font-style: black;
 font-size: 10rem;
@@ -43,7 +43,7 @@ position: fixed;
 }
 
 .port-info p{
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
 font-weight: 500;
 font-style: black;
 font-size: 1.2rem;
@@ -93,13 +93,13 @@ margin-bottom: 30px;
 }
 
 
-#work {
+#project {
 
   position: relative;
   width: 100%;
 }
 
-#work img {
+#project img {
   position: absolute;
   top: 0;
   left: 0;
@@ -108,7 +108,7 @@ margin-bottom: 30px;
   z-index: +30;
 }
  
-#work li img {
+#project li img {
   display: none;
   margin-top: 100px;
   position: absolute;
@@ -120,7 +120,7 @@ margin-bottom: 30px;
   z-index: 0;
 }
 
-#work li section {
+#project li section {
   margin-top: -10px;
   position: absolute;
   top: 30;
@@ -251,7 +251,7 @@ margin-bottom: 30px;
 
 @media screen and (min-width: 64em) {
 body{
-	font-family: 'Poppins', sans-serif;
+	font-family: $main-font;
 font-weight: 400;
 font-style: normal;
 background-color: #fff;
@@ -285,7 +285,7 @@ background-color: #fff;
 
 
 #portf-name h3{
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
 font-weight: 500;
 font-style: black;
 font-size: 10rem;
@@ -295,7 +295,7 @@ position: fixed;
 }
 
 .port-info p{
-  font-family: 'Poppins', sans-serif;
+  font-family: $main-font;
 font-weight: 500;
 font-style: black;
 font-size: 1.2rem;
@@ -344,7 +344,7 @@ margin-bottom: 30px;
 }
 
 
-#work {
+#project {
 
   position: relative;
   overflow: hidden;
@@ -352,7 +352,7 @@ margin-bottom: 30px;
   height: 700px;
 }
 
-#work img {
+#project img {
   position: absolute;
   top: 0;
   left: 0;
@@ -361,7 +361,7 @@ margin-bottom: 30px;
   z-index: +30;
 }
  
-#work li img {
+#project li img {
   display: block;
   margin-top: 100px;
   position: absolute;
@@ -373,7 +373,7 @@ margin-bottom: 30px;
   z-index: 0;
 }
 
-#work li section {
+#project li section {
   margin-top: -10px;
   position: absolute;
   top: 30;
