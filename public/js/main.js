@@ -173,7 +173,7 @@ const myVM = (() => {
 
 <section id="mockup">
 <img src="${portfolio.IMAGE}" alt="">
-<video class="int-video" src="${portfolio.VIDEO}" type="video/mp4" controls="autoplay"></video>
+<video class="int-video" src="${portfolio.VIDEO}" type="video/mp4" controls></video>
 </section>
 
 <section class="pro-desc">

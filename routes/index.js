@@ -43,7 +43,7 @@ router.post('/mail', (req, res) => {
 
 	const mailOptions = {
 		from: req.body.usermail,
-		to: "ifeobasa12@gmail.com",
+		to: "ifeobasa16@gmail.com",
 		replyTo: req.body.usermail,
 		subject: `From portfolio site: Subject = ${req.body.subject || 'none'}`, // Subject line
 		text: req.body.message
