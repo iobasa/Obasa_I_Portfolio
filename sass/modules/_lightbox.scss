@@ -77,6 +77,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
+  z-index: 9999;
   position: absolute;
   top: 20px;
   }
@@ -84,7 +85,7 @@
   .close-project:hover{
     cursor: default;
     }
-  
+
 
 
   
@@ -175,22 +176,23 @@
     display: block;
   }
   
-  .close-project {
-    text-shadow: 2px 2px 4px black;
-    float: right;
-  left: 95%;
-  color: white;
-  font-family: $main-font;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
-  position: absolute;
-  top: 20px;
-  }
-  
-  .close-project:hover{
-    cursor: default;
+    .close-project {
+      text-shadow: 2px 2px 4px black;
+      float: right;
+    left: 95%;
+    color: white;
+    font-family: $main-font;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    z-index: 9999;
+    position: absolute;
+    top: 20px;
     }
+    
+    .close-project:hover{
+      cursor: default;
+      }
   
 }
 
