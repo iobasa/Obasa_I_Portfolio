@@ -21,7 +21,7 @@ A portfolio site that will feature a home page and portfolio page which will dis
 
 1. Clone the repo
 ```sh
-https://github.com/gleb-zavizenov/AlOsman_N_Portfolio.git
+https://github.com/iobasa/Obasa_I_Portfolio.git
 ```
 2. Install NPM packages
 ```sh
