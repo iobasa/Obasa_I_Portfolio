@@ -152,12 +152,12 @@ color: black;
 
 .pro-desc{
     margin-top: 9%;
-    margin-left: 25%;
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 50%;
+    width: 80%;
     padding-bottom: 10%;
 }
 
@@ -194,6 +194,7 @@ color: black;
 }
 
 #mockup video{
+    padding-top: 15%;
     display: flex;
     justify-content: center;
     margin-left: 5%;
@@ -426,6 +427,10 @@ color: black;
     width: 110%;
 }
 
+#mockup video{
+    padding-top: 15%;
+}
+
 .plan{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -640,6 +645,7 @@ height: 700px;
 }
 
 #mockup video{
+    padding-top: 15%;
     display: flex;
     justify-content: center;
     margin-left: 5%;
