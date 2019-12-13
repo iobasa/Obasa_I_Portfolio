@@ -1,6 +1,7 @@
-# Obasa_I_Portfolio
- a responsive one-page application to showcase an interactive implementation of infographic design.
+![Logo](/public/images/logo.svg)
 
+# Obasa_I_Portfolio
+Portoflio Website showcasing all our projects that have been done so far.
 
 ## Assignment Description
 The portfolio site you develop this term is ultimately what you will use to present your work and
@@ -16,8 +17,21 @@ your site live for it to be graded.
 ## Description
 A portfolio site that will feature a home page and portfolio page which will display the work that I have done.
 
+### Getting Started and Installing
 
-## Getting Started
+1. Clone the repo
+```sh
+https://github.com/gleb-zavizenov/AlOsman_N_Portfolio.git
+```
+2. Install NPM packages
+```sh
+npm install
+```
+3. Import database to MAMP or WAMP from the 'database' folder
+4. Run Node
+```sh
+npm start
+```
 
 ### PHP CONTACT FORM
 The php contact form for Pan is located in the php folder.
@@ -37,10 +51,22 @@ The php contact form for Pan is located in the php folder.
 
 ## Author
 
-* Obasa Ifekitan
+- **Obasa Ifekitan (Developer/Designer)
+
+## Credits/Tools
+
+* Adobe XD
+* Adobe Photoshop
+* HTML5
+* CSS3
+* SASS
+* Javascript
+* Node.js
+* Express
+* MySQL
 
 ## License
-* MIT
+[MIT](https://choosealicense.com/licenses/mit/)
 
 ## Acknowledgments
 
