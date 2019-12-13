@@ -19,9 +19,15 @@ router.get('/', (req, res, next) => {
     // should really get the user data here and then fetch it thru, but let's try this asynchronously
     console.log('at the main route');
 
+    sql.getConnection((err, connection) => {
+		if (err) { return console.log(err.message); }
+
     let query = "SELECT * FROM tbl_project";
 
     sql.query(query, (err, result) => {
+        connection.release();
+
+
         if (err) { throw err; console.log(err); }
 
         console.log(result); // should see objects wrapped in an array
@@ -31,6 +37,7 @@ router.get('/', (req, res, next) => {
        res.render('index', { projects : result });
 
        // , { data: result }
+    })
     })
 })
 
@@ -66,9 +73,13 @@ router.get('/users/:id', (req,res) => {
     console.log('hit a dynamic route!');
     console.log(req.params.id);
 
+    sql.getConnection((err, connection) => {
+		if (err) { return console.log(err.message); }
+
     let query = `SELECT * FROM tbl_project WHERE ID="${req.params.id}"`;
 
     sql.query(query, (err, result) => {
+        connection.release();
         if (err) { throw err; console.log(err); }
 
         console.log(result); // should see objects wrapped in an array
@@ -89,6 +100,7 @@ router.get('/users/:id', (req,res) => {
         // send the DB query back to the browser
         res.json(result);
 
+    })
     })
 })
 
